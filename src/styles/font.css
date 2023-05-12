@@ -1,0 +1,27 @@
+/*
+    =================
+        Add Fonts  
+    =================  
+
+*/
+
+@font-face {
+  font-family: "iran-yekan-regular";
+  src: url("../fonts/ttf/iran-yekan-regular.ttf") format("truetype"),
+    url("../fonts/woff/iran-yekan-regular.woff") format("woff"),
+    url("../fonts/woff2/iran-yekan-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "iran-yekan-medium";
+  src: url("../fonts/ttf/iran-yekan-medium.ttf") format("truetype"),
+    url("../fonts/woff/iran-yekan-medium.woff") format("woff"),
+    url("../fonts/woff2/iran-yekan-medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "iran-yekan-bold";
+  src: url("../fonts/ttf/iran-yekan-bold.ttf") format("truetype"),
+    url("../fonts/woff/iran-yekan-bold.woff") format("woff"),
+    url("../fonts/woff2/iran-yekan-bold.woff2") format("woff2");
+}

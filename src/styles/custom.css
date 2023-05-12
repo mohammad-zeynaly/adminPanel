@@ -1,0 +1,20 @@
+/*
+    ==============
+     custom style
+    ==============
+*/
+.menu__link.active {
+  color: #5867dd;
+  background-color: #ebebeb;
+  position: relative;
+}
+.menu__link.active::after {
+  content: "";
+  position: absolute;
+  top: 43%;
+  left: 4%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #ffb822;
+  border-radius: 100%;
+}
