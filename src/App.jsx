@@ -5,16 +5,17 @@ import routes from "./routes";
 import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
+  
   const routers = useRoutes(routes);
-  const [userData, setUserData] = useState([]);
+  const [quickAccess, setQuickAccess] = useState(false);
 
   return (
-    <adminPanelContext.Provider value={{ userData, setUserData }}>
-      <div className="font-iranYekanMedium bg-[#E7EBEE]">
+    <adminPanelContext.Provider value={{ quickAccess, setQuickAccess }}>
+      <div onClick={() => setQuickAccess(false)} className="font-iranYekanMedium bg-[#E7EBEE]">
         <div className="container">
           <div className="flex items-center">
             <Sidebar />
-            <div className="mr-96 h-screen">{routers}</div>
+            <div className="lg:mr-80 w-full h-screen">{routers}</div>
           </div>
         </div>
       </div>

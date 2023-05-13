@@ -1,7 +1,11 @@
+import Topbar from "../../components/Topbar/Topbar"
 
 function support() {
   return (
-    <div> پشتیبانی </div>
+    <div> 
+      <Topbar BreadcrumbTitle="داشبورد پشتیبانی" BreadcrumbLink="/support"/>
+      پشتیبانی 
+    </div>
   )
 }
 
