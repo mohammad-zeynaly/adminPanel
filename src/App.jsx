@@ -1,17 +1,53 @@
 import { useState } from "react";
 import { useRoutes } from "react-router-dom";
-import { adminPanelContext } from "./context/adminPanelContext";
+import { AdminPanelContext } from "./context/AdminPanelContext";
 import routes from "./routes";
 import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
-  
   const routers = useRoutes(routes);
-  const [quickAccess, setQuickAccess] = useState(false);
+
+
+  // states
+  const [isShowQuickAccessModal, setIsShowQuickAccessModal] = useState(false);
+  const [isShowMessageModal, setIsShowMessageModal] = useState(false);
+  const [isShowNotificationsModal, setIsShowNotificationsModal] = useState(false);
+  const [isShowSidebar, setIsShowSidebar] = useState(false);
+  const [isShowMenuModals, setIsShowMenuModals] = useState(false);
+  const [isShowAdminDetailModal, setIsShowAdminDetailModal] = useState(false);
+  
+
+  const closeAllModal = () => {
+    setIsShowQuickAccessModal(false);
+    setIsShowMessageModal(false);
+    setIsShowNotificationsModal(false);
+    setIsShowSidebar(false);
+    setIsShowMenuModals(false);
+    setIsShowAdminDetailModal(false);
+  };
 
   return (
-    <adminPanelContext.Provider value={{ quickAccess, setQuickAccess }}>
-      <div onClick={() => setQuickAccess(false)} className="font-iranYekanMedium bg-[#E7EBEE]">
+    <AdminPanelContext.Provider
+      value={{
+        isShowQuickAccessModal,
+        setIsShowQuickAccessModal,
+        isShowMessageModal,
+        setIsShowMessageModal,
+        isShowNotificationsModal,
+        setIsShowNotificationsModal,
+        isShowSidebar,
+        setIsShowSidebar,
+        isShowMenuModals,
+        setIsShowMenuModals,
+        isShowAdminDetailModal,
+        setIsShowAdminDetailModal,
+      }}
+    >
+      <div
+        onClick={closeAllModal}
+        className="font-iranYekanMedium bg-[#E7EBEE]"
+      >
+        <div className={isShowSidebar ? "overlay" : ""}></div>
         <div className="container">
           <div className="flex items-center">
             <Sidebar />
@@ -19,7 +55,7 @@ function App() {
           </div>
         </div>
       </div>
-    </adminPanelContext.Provider>
+    </AdminPanelContext.Provider>
   );
 }
 
