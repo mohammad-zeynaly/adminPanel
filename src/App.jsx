@@ -51,7 +51,7 @@ function App() {
         <div className="container">
           <div className="flex items-center">
             <Sidebar />
-            <div className="lg:pr-80 w-full h-screen">{routers}</div>
+            <div className="lg:pr-80 w-full">{routers}</div>
           </div>
         </div>
       </div>

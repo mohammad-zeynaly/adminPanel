@@ -30,3 +30,6 @@
   transform: translateZ(0);
   z-index: 45;
 }
+/* .recharts-tooltip-cursor {
+  fill: none;
+} */

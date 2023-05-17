@@ -16,6 +16,7 @@ export default {
       },
       colors:{
         primary: "#5867DD",
+        secondary: "#0abb87",
       },
       fontSize: {
         "2sm" : "15px",
