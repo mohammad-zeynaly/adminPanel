@@ -5,7 +5,7 @@ function AdminDetailModal() {
   return (
     <div
       onClick={(event) => event.stopPropagation()}
-      className="mt-2 w-full lg:w-72 bg-white rounded-lg p-4 lg:absolute lg:left-0 transition-all duration-150"
+      className="mt-2 w-full lg:w-72 bg-white rounded-lg p-4 lg:absolute lg:left-0 transition-all duration-150 z-40"
     >
       <div className="flex flex-col items-center text-center">
         <Avatar
