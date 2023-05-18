@@ -33,3 +33,6 @@
 /* .recharts-tooltip-cursor {
   fill: none;
 } */
+tspan{
+  font-size: 14px;
+}

@@ -1,3 +1,5 @@
+import ProgressBar from "../ProgressBar/ProgressBar";
+
 function StatisticsSliderBox(props) {
   let {
     textColor,
@@ -22,11 +24,11 @@ function StatisticsSliderBox(props) {
         </div>
         <h6 className={`text-2xl font-iranYekanBold ${textColor}`}>{count}</h6>
       </div>
-      <progress
-        className={`mt-3 p-[5px] w-full [&::-webkit-progress-bar]:rounded-lg [&::-webkit-progress-value]:rounded-lg [&::-webkit-progress-bar]:bg-[#e9ecef] ${progressValueColor}`}
-        value={progressValue}
-        max="100"
-      ></progress>
+      <ProgressBar
+        progressClass="mt-3"
+        progressValue={progressValue}
+        progressColorValue={progressValueColor}
+      />
     </div>
   );
 }

@@ -529,6 +529,93 @@ const StatisticsSliderItems = [
   },
 ];
 
+
+const totalCustomersData = [
+  {
+    id: 1,
+    title: "کل مشتریان",
+    chart: (
+      <svg width="100" height="50" className="peity">
+        <path fill="#5867DD" d="M1 38.889H9V50H1z" data-value="2"></path>
+        <path
+          fill="rgba(88, 103, 221, 0.3)"
+          d="M11 22.222H19V50H11z"
+          data-value="5"
+        ></path>
+        <path fill="#5867DD" d="M21 0H29V50H21z" data-value="9"></path>
+        <path
+          fill="rgba(88, 103, 221, 0.3)"
+          d="M31 16.667H39V50H31z"
+          data-value="6"
+        ></path>
+        <path fill="#5867DD" d="M41 22.222H49V50H41z" data-value="5"></path>
+        <path
+          fill="rgba(88, 103, 221, 0.3)"
+          d="M51 38.889H59V50H51z"
+          data-value="2"
+        ></path>
+        <path fill="#5867DD" d="M61 27.778H69V50H61z" data-value="4"></path>
+        <path
+          fill="rgba(88, 103, 221, 0.3)"
+          d="M71 33.333H79V50H71z"
+          data-value="3"
+        ></path>
+        <path fill="#5867DD" d="M81 11.111H89V50H81z" data-value="7"></path>
+        <path
+          fill="rgba(88, 103, 221, 0.3)"
+          d="M91 22.222H99V50H91z"
+          data-value="5"
+        ></path>
+      </svg>
+    ),
+    count: 1_241,
+    status: " 23% افزایش در هفته پیش",
+    textClass: "text-primary",
+  },
+  {
+    id: 2,
+    title: "میانگین سفارش",
+    chart: (
+      <svg width="100" height="50" className="peity">
+        <path fill="#0ABB87" d="M1 38.889H9V50H1z" data-value="2"></path>
+        <path
+          fill="rgba(10, 187, 135, 0.3)"
+          d="M11 22.222H19V50H11z"
+          data-value="5"
+        ></path>
+        <path fill="#0ABB87" d="M21 0H29V50H21z" data-value="9"></path>
+        <path
+          fill="rgba(10, 187, 135, 0.3)"
+          d="M31 16.667H39V50H31z"
+          data-value="6"
+        ></path>
+        <path fill="#0ABB87" d="M41 22.222H49V50H41z" data-value="5"></path>
+        <path
+          fill="rgba(10, 187, 135, 0.3)"
+          d="M51 38.889H59V50H51z"
+          data-value="2"
+        ></path>
+        <path fill="#0ABB87" d="M61 27.778H69V50H61z" data-value="4"></path>
+        <path
+          fill="rgba(10, 187, 135, 0.3)"
+          d="M71 33.333H79V50H71z"
+          data-value="3"
+        ></path>
+        <path fill="#0ABB87" d="M81 11.111H89V50H81z" data-value="7"></path>
+        <path
+          fill="rgba(10, 187, 135, 0.3)"
+          d="M91 22.222H99V50H91z"
+          data-value="5"
+        ></path>
+      </svg>
+    ),
+    count: 732_520,
+    status: "4 واحد کمتر از هفته پیش",
+    classBetween: "xl:mr-4",
+    textClass: "text-secondary",
+  },
+];
+
 export {
   accessItems,
   summaryItems,
@@ -536,4 +623,5 @@ export {
   notificationItems,
   socialItems,
   StatisticsSliderItems,
+  totalCustomersData,
 };

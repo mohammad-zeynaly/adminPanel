@@ -18,7 +18,7 @@ function StatisticsSlider() {
         grabCursor={true}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         breakpoints={{
-          1200: {
+          1300: {
             slidesPerView: 4,
           },
           768: {

@@ -1,93 +1,86 @@
 import {
   BarChart,
-  CartesianGrid,
-  YAxis,
-  XAxis,
   Bar,
+  XAxis,
+  YAxis,
   Tooltip,
+  CartesianGrid,
   ResponsiveContainer,
 } from "recharts";
 import useNumberPersian from "../../hooks/useNumberPersian";
-
 const data = [
   {
     name: "آفریقا",
-    uv: 100,
+    population: 1216,
   },
   {
     name: "آسیا",
-    uv: 200,
+    population: 4561,
   },
   {
     name: "اروپا",
-    uv: 300,
+    population: 746,
   },
   {
-    name: "آمریکای لاتین",
-    uv: 400,
+    name: "آمریکا",
+    population: 1002,
   },
   {
-    name: "آمریکای شمالی",
-    uv: 500,
+    name: "استرالیا",
+    population: 26,
   },
 ];
-
 function SalesChart() {
   const getLabel = (value, name) => {
-    if (name === "uv") {
-      return ` جمعیت: ${value}`;
+    if (name === "population") {
+      return ` جمعیت: ${value} میلیون`;
     }
   };
 
   return (
-    <div className="w-full lg:w-[49%] mb-4">
+    <div className="w-full xl:w-[49%]">
       <div className="bg-white rounded-lg p-4 w-full">
         <h5> فروش های منطقه ای </h5>
 
-        <div className="flex justify-center sm:mt-4 mr-4 w-full">
+        <div className="flex justify-center mt-3 sm:mt-4 mr-4 w-full ">
           <ResponsiveContainer width="100%" height={280}>
             <BarChart
-              className="flex justify-center"
               data={data}
+              layout="vertical"
               barSize={15}
               style={{ direction: "ltr" }}
-              layout="vertical" // اینجا تغییر داده شده است
             >
-              <CartesianGrid strokeDasharray="3 3" horizontal={false}  />
-              <XAxis dataKey="name" />
-              <YAxis className="mr-8" />
+              <CartesianGrid strokeDasharray="3 3" horizontal={false} />
+
+              <XAxis type="number" hide />
+              <YAxis type="category" dataKey="name" />
               <Tooltip formatter={(value, name) => [getLabel(value, name)]} />
 
-              <Bar
-                dataKey="uv"
-                fill="#1B35FE"
-                label={({ value }) => getLabel(value, "uv")}
-              />
+              <Bar background dataKey="population" fill="#1B35FE" />
             </BarChart>
           </ResponsiveContainer>
         </div>
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between mt-4">
-          <div className="text-primary">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+          <div className="text-primary mt-3">
             <h6 className=" text-lg font-iranYekanBold">
-              {useNumberPersian(4_234_076)} 
-              <span className="text-base">  تومان  </span>
+              {useNumberPersian(4_234_076)}
+              <span className="text-base"> تومان </span>
             </h6>
             <span className=" text-sm"> کل فروش </span>
           </div>
-          <div className="text-[#ffb822]">
+          <div className="text-[#ffb822] mt-3">
             <h6 className=" text-lg font-iranYekanBold font-black">
-              {useNumberPersian(620_076)} 
-              <span className="text-base">  تومان  </span>
-
+              {useNumberPersian(620_076)}
+              <span className="text-base"> تومان </span>
             </h6>
-            <span className=" text-sm">  میانگین </span>
+            <span className=" text-sm"> میانگین </span>
           </div>
-          <div className="text-[#e04b4b]">
+          <div className="text-[#e04b4b] mt-3">
             <h6 className="text-lg font-iranYekanBold">
-              {useNumberPersian(20_076)} 
-              <span className="text-base">  تومان  </span>
+              {useNumberPersian(20_076)}
+              <span className="text-base"> تومان </span>
             </h6>
-            <span className="text-sm">  بازگشت </span>
+            <span className="text-sm"> بازگشت </span>
           </div>
         </div>
       </div>
