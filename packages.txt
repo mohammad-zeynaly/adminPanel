@@ -1,0 +1,8 @@
+1= react 
+2= react-router-dom
+3= mui
+4= tailwindcss
+5= swiper
+6= recharts
+7= svg icons
+8= supabase

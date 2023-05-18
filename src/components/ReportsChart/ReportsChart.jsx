@@ -64,7 +64,7 @@ function Reports() {
   return (
     <div className="w-full mb-5 xl:w-[49%] xl:mb-0">
       <div className="bg-white rounded-lg p-4 w-full">
-        <h5>گزارشات </h5>
+        <h4>گزارشات </h4>
         <div className="flex flex-col sm:flex-row sm:items-center justify-between mt-4">
           <div className="text-primary">
             <h6 className="text-lg font-iranYekanBold">

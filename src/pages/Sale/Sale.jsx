@@ -2,7 +2,8 @@ import Topbar from "../../components/Topbar/Topbar";
 import StatisticsSlider from "../../components/StatisticsSlider/StatisticsSlider";
 import ChartBar from "../../components/ChartBar/ChartBar";
 import CustomersChart from "../../components/CustomersChart/CustomersChart";
-import SalesNetworksChart from "../../components/SalesNetworksChart/SalesNetworksChart"
+import SalesChart from "../../components/SalesChart/SalesChart"
+import RecentIncome from "../../components/RecentIncome/RecentIncome"
 
 function Sale() {
   return (
@@ -12,7 +13,8 @@ function Sale() {
         <StatisticsSlider />
         <ChartBar />
         <CustomersChart />
-        <SalesNetworksChart />
+        <SalesChart />
+        <RecentIncome />
       </div>
     </div>
   );

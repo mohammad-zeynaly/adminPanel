@@ -68,7 +68,7 @@ const accessItems = [
   {
     id: 1,
     bgClass: "bg-[#F3C6C6]",
-    textClass: "text-[#e04b4b]",
+    textClass: "text-third",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -162,7 +162,7 @@ const messageItems = [
   {
     id: 3,
     avatar: "ک",
-    avatarBg: "bg-[#e04b4b]",
+    avatarBg: "bg-third",
     name: "استیو جابز",
     time: "09:33",
   },
@@ -354,9 +354,9 @@ const StatisticsSliderItems = [
         <path d="M11 2a1 1 0 011-1h2a1 1 0 011 1v12h.5a.5.5 0 010 1H.5a.5.5 0 010-1H1v-3a1 1 0 011-1h2a1 1 0 011 1v3h1V7a1 1 0 011-1h2a1 1 0 011 1v7h1V2z"></path>
       </svg>
     ),
-    progressValueColor: "[&::-webkit-progress-value]:bg-[#e04b4b]",
-    textColor: "text-[#e04b4b]",
-    bgColor: "bg-[#e04b4b]",
+    progressValueColor: "[&::-webkit-progress-value]:bg-third",
+    textColor: "text-third",
+    bgColor: "bg-third",
     count: 2_587,
     progressValue: 75,
   },
@@ -616,6 +616,112 @@ const totalCustomersData = [
   },
 ];
 
+const averageSale = [
+  {
+    id: 1,
+    title: "گوگل",
+    progressPercent: 42,
+    progressValueColor: "[&::-webkit-progress-value]:bg-[#FF3D00]",
+  },
+  {
+    id: 2,
+    title: "اینستاگرام",
+    progressPercent: 34,
+    progressValueColor: "[&::-webkit-progress-value]:bg-[#3f729b]",
+  },
+  {
+    id: 3,
+    title: "واتس اپ",
+    progressPercent: 60,
+    progressValueColor: "[&::-webkit-progress-value]:bg-[#43d854]",
+  },
+  {
+    id: 4,
+    title: "فیسبوک",
+    progressPercent: 20,
+    progressValueColor: "[&::-webkit-progress-value]:bg-[#3b5998]",
+  },
+  {
+    id: 5,
+    title: "لینکدین",
+    progressPercent: 30,
+    progressValueColor: "[&::-webkit-progress-value]:bg-[#55a6eb]",
+  },
+]
+
+const incomeItems = [
+  {
+    id: 1,
+    title: "سود ناخالص",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        fill="currentColor"
+        stroke="currentColor"
+        strokeWidth="0"
+        className="text-secondary w-5 h-5"
+        viewBox="0 0 16 16"
+      >
+        <path d="M11 2a1 1 0 011-1h2a1 1 0 011 1v12h.5a.5.5 0 010 1H.5a.5.5 0 010-1H1v-3a1 1 0 011-1h2a1 1 0 011 1v3h1V7a1 1 0 011-1h2a1 1 0 011 1v7h1V2z"></path>
+      </svg>
+    ),
+    price: 1_958_104,
+    borderClass: "border-secondary",
+  },
+  {
+    id: 2,
+    title: " کسر مالیات",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        fill="currentColor"
+        stroke="currentColor"
+        strokeWidth="0"
+        className="text-third w-5 h-5"
+        viewBox="0 0 576 512"
+      >
+        <path d="M556.686 290.542L410.328 64.829C397.001 44.272 374.417 32 349.917 32H56C25.121 32 0 57.122 0 88v8c0 44.112 35.888 80 80 80h196.042l-18.333 48H144c-48.523 0-88 39.477-88 88 0 30.879 25.121 56 56 56h131.552c2.987 0 5.914.549 8.697 1.631L352 408.418V480h224V355.829c0-23.225-6.679-45.801-19.314-65.287zM528 432H400v-23.582c0-19.948-12.014-37.508-30.604-44.736l-99.751-38.788A71.733 71.733 0 00243.552 320H112c-4.411 0-8-3.589-8-8 0-22.056 17.944-40 40-40h113.709c19.767 0 37.786-12.407 44.84-30.873l24.552-64.281c8.996-23.553-8.428-48.846-33.63-48.846H80c-17.645 0-32-14.355-32-32v-8c0-4.411 3.589-8 8-8h293.917c8.166 0 15.693 4.09 20.137 10.942l146.358 225.715A71.84 71.84 0 01528 355.829V432z"></path>
+      </svg>
+    ),
+    price: 234_769,
+    borderClass: "border-third",
+  },
+  {
+    id: 3,
+    title: "سود خالص",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        fill="currentColor"
+        stroke="currentColor"
+        strokeWidth="0"
+        className="text-[#ffb822] w-5 h-5"
+        viewBox="0 0 288 512"
+      >
+        <path d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z"></path>
+      </svg>
+    ),
+    price: 1_608_469,
+    borderClass: "border-[#ffb822]",
+  },
+];
+
+
+const allIncomeItemData = [
+  {id: 1, date:'1402/03/1',saleCount:1_050,grossProfit:32_580,tax:3_023,netProfit:28_670},
+  {id: 2, date:'1402/03/2',saleCount:780,grossProfit:22_380,tax:2_233,netProfit:20_147},
+  {id: 3, date:'1402/03/3',saleCount:1_980,grossProfit:39_580,tax:3_583,netProfit:35_997},
+  {id: 4, date:'1402/03/4',saleCount:300,grossProfit:12_580,tax:1_075,netProfit:11_505},
+  {id: 5, date:'1402/03/5',saleCount:940,grossProfit:24_580,tax:2_750,netProfit:21_730},
+  {id: 6, date:'1402/03/6',saleCount:1_280,grossProfit:28_580,tax:2_930,netProfit:25_650},
+]
+
 export {
   accessItems,
   summaryItems,
@@ -624,4 +730,7 @@ export {
   socialItems,
   StatisticsSliderItems,
   totalCustomersData,
+  averageSale,
+  incomeItems,
+  allIncomeItemData,
 };

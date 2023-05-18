@@ -10,9 +10,9 @@ function TotalCustomersChart() {
           key={chartData.id}
           className={`bg-white rounded-lg w-full mb-5 xl:w-[49%] xl:mb-0 ${chartData.classBetween}`}
         >
-          <h5 className="border-b p-4 text-2sm font-iranYekanBold">
+          <h4 className="border-b p-4 text-2sm font-iranYekanBold">
             {chartData.title}
-          </h5>
+          </h4>
           <div className="p-4 flex flex-col items-center">
             {chartData.chart}
             <h6

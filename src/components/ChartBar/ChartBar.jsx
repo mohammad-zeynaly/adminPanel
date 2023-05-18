@@ -1,6 +1,6 @@
 import ChartBoxTemplate from "../ChartBoxTemplate/ChartBoxTemplate";
 import ReportsChart from "../ReportsChart/ReportsChart";
-import SalesChart from "../SalesChart/SalesChart";
+import SalesChart from "../RegionalSalesChart/RegionalSalesChart";
 
 function ChartBar() {
   return (

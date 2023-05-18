@@ -33,6 +33,11 @@
 /* .recharts-tooltip-cursor {
   fill: none;
 } */
-tspan{
+tspan {
   font-size: 14px;
+}
+@media screen and (max-width: 400px) {
+  .chart__status-buy {
+    transform: translateX(-9%) !important;
+  }
 }

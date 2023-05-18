@@ -18,16 +18,16 @@ function SalesProducts() {
       price: 2_214,
       progressValue: 30,
       status: " 14% کاهش",
-      productStatusClass: "text-[#e04b4b] rotate-180",
+      productStatusClass: "text-third rotate-180",
     },
   ]);
 
   return (
-    <div className="w-full mb-5 xl:w-[49%] xl:mb-0">
-      <div className="bg-white rounded-lg  mb-5 xl:mb-0">
-        <h5 className="border-b p-4 text-2sm font-iranYekanBold">
+    <div className="w-full xl:w-[49%]">
+      <div className="bg-white rounded-lg  ">
+        <h4 className="border-b p-4 text-2sm font-iranYekanBold">
           فروش محصولات
-        </h5>
+        </h4>
 
         <div className="p-4">
           <div className="flex items-center">
