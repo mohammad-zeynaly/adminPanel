@@ -2,8 +2,9 @@ import Topbar from "../../components/Topbar/Topbar";
 import StatisticsSlider from "../../components/StatisticsSlider/StatisticsSlider";
 import ChartBar from "../../components/ChartBar/ChartBar";
 import CustomersChart from "../../components/CustomersChart/CustomersChart";
-import SalesChart from "../../components/SalesChart/SalesChart"
-import RecentIncome from "../../components/RecentIncome/RecentIncome"
+import SalesChart from "../../components/SalesChart/SalesChart";
+import RecentIncome from "../../components/RecentIncome/RecentIncome";
+import RecentCustomers from "../../components/RecentCustomers/RecentCustomers";
 
 function Sale() {
   return (
@@ -15,6 +16,7 @@ function Sale() {
         <CustomersChart />
         <SalesChart />
         <RecentIncome />
+        <RecentCustomers />
       </div>
     </div>
   );

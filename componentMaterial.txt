@@ -3,3 +3,8 @@
 
 2 => component Avatar 
 
+3 => component Badge 
+
+4 => component Table 
+
+

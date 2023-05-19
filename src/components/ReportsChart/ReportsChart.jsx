@@ -7,50 +7,8 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import { reportChartData } from "../../allDatas";
 import useNumberPersian from "../../hooks/useNumberPersian";
-
-const data = [
-  {
-    name: "1391",
-    average: 100,
-    sale: 200,
-  },
-  {
-    name: "1392",
-    average: 200,
-    sale: 300,
-  },
-  {
-    name: "1393",
-    average: 300,
-    sale: 400,
-  },
-  {
-    name: "1394",
-    average: 400,
-    sale: 500,
-  },
-  {
-    name: "1395",
-    average: 500,
-    sale: 600,
-  },
-  {
-    name: "1396",
-    average: 600,
-    sale: 700,
-  },
-  {
-    name: "1397",
-    average: 700,
-    sale: 800,
-  },
-  {
-    name: "1398",
-    average: 800,
-    sale: 900,
-  },
-];
 
 function Reports() {
   const getLabel = (value, name) => {
@@ -85,7 +43,7 @@ function Reports() {
           <ResponsiveContainer width="100%" height={280}>
             <BarChart
               className="flex justify-center"
-              data={data}
+              data={reportChartData}
               barSize={15}
               style={{ direction: "ltr" }}
             >

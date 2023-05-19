@@ -7,29 +7,10 @@ import {
   CartesianGrid,
   ResponsiveContainer,
 } from "recharts";
+import {regionalSalesChartData} from "../../allDatas"
 import useNumberPersian from "../../hooks/useNumberPersian";
-const data = [
-  {
-    name: "آفریقا",
-    population: 1216,
-  },
-  {
-    name: "آسیا",
-    population: 4561,
-  },
-  {
-    name: "اروپا",
-    population: 746,
-  },
-  {
-    name: "آمریکا",
-    population: 1002,
-  },
-  {
-    name: "استرالیا",
-    population: 26,
-  },
-];
+
+
 function RegionalSalesChart() {
   const getLabel = (value, name) => {
     if (name === "population") {
@@ -45,7 +26,7 @@ function RegionalSalesChart() {
         <div className="flex justify-center mt-3 sm:mt-4 mr-4 w-full ">
           <ResponsiveContainer width="100%" height={280}>
             <BarChart
-              data={data}
+              data={regionalSalesChartData}
               layout="vertical"
               barSize={15}
               style={{ direction: "ltr" }}

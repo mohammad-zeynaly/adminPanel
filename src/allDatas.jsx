@@ -1,4 +1,6 @@
 
+////////////////////////////////////////// data page SalesAndManagement //////////////////////////////////////////////
+
 //data summery in sidebar
 const summaryItems = [
   {
@@ -336,6 +338,8 @@ const socialItems = [
   },
 ];
 
+
+// data Slider network sales
 const StatisticsSliderItems = [
   {
     id: 1,
@@ -530,6 +534,77 @@ const StatisticsSliderItems = [
 ];
 
 
+// data chart reports 
+const reportChartData = [
+  {
+    name: "1391",
+    average: 100,
+    sale: 200,
+  },
+  {
+    name: "1392",
+    average: 200,
+    sale: 300,
+  },
+  {
+    name: "1393",
+    average: 300,
+    sale: 400,
+  },
+  {
+    name: "1394",
+    average: 400,
+    sale: 500,
+  },
+  {
+    name: "1395",
+    average: 500,
+    sale: 600,
+  },
+  {
+    name: "1396",
+    average: 600,
+    sale: 700,
+  },
+  {
+    name: "1397",
+    average: 700,
+    sale: 800,
+  },
+  {
+    name: "1398",
+    average: 800,
+    sale: 900,
+  },
+];
+
+
+// data chart regional sales 
+const regionalSalesChartData = [
+  {
+    name: "آفریقا",
+    population: 1216,
+  },
+  {
+    name: "آسیا",
+    population: 4561,
+  },
+  {
+    name: "اروپا",
+    population: 746,
+  },
+  {
+    name: "آمریکا",
+    population: 1002,
+  },
+  {
+    name: "استرالیا",
+    population: 26,
+  },
+];
+
+
+// data chart cutomers 
 const totalCustomersData = [
   {
     id: 1,
@@ -616,6 +691,8 @@ const totalCustomersData = [
   },
 ];
 
+
+// data networks sales & Average 
 const averageSale = [
   {
     id: 1,
@@ -647,8 +724,10 @@ const averageSale = [
     progressPercent: 30,
     progressValueColor: "[&::-webkit-progress-value]:bg-[#55a6eb]",
   },
-]
+];
 
+
+//data income Box
 const incomeItems = [
   {
     id: 1,
@@ -713,14 +792,108 @@ const incomeItems = [
 ];
 
 
+// all data table income 
 const allIncomeItemData = [
-  {id: 1, date:'1402/03/1',saleCount:1_050,grossProfit:32_580,tax:3_023,netProfit:28_670},
-  {id: 2, date:'1402/03/2',saleCount:780,grossProfit:22_380,tax:2_233,netProfit:20_147},
-  {id: 3, date:'1402/03/3',saleCount:1_980,grossProfit:39_580,tax:3_583,netProfit:35_997},
-  {id: 4, date:'1402/03/4',saleCount:300,grossProfit:12_580,tax:1_075,netProfit:11_505},
-  {id: 5, date:'1402/03/5',saleCount:940,grossProfit:24_580,tax:2_750,netProfit:21_730},
-  {id: 6, date:'1402/03/6',saleCount:1_280,grossProfit:28_580,tax:2_930,netProfit:25_650},
-]
+  {
+    id: 1,
+    date: "1402/03/1",
+    saleCount: 1_050,
+    grossProfit: 32_580,
+    tax: 3_023,
+    netProfit: 28_670,
+  },
+  {
+    id: 2,
+    date: "1402/03/2",
+    saleCount: 780,
+    grossProfit: 22_380,
+    tax: 2_233,
+    netProfit: 20_147,
+  },
+  {
+    id: 3,
+    date: "1402/03/3",
+    saleCount: 1_980,
+    grossProfit: 39_580,
+    tax: 3_583,
+    netProfit: 35_997,
+  },
+  {
+    id: 4,
+    date: "1402/03/4",
+    saleCount: 300,
+    grossProfit: 12_580,
+    tax: 1_075,
+    netProfit: 11_505,
+  },
+  {
+    id: 5,
+    date: "1402/03/5",
+    saleCount: 940,
+    grossProfit: 24_580,
+    tax: 2_750,
+    netProfit: 21_730,
+  },
+  {
+    id: 6,
+    date: "1402/03/6",
+    saleCount: 1_280,
+    grossProfit: 28_580,
+    tax: 2_930,
+    netProfit: 25_650,
+  },
+];
+
+// all data recent customers data 
+const recentCustomersData = [
+  {
+    id: 1,
+    avatar: "./assets/images/customers/customer-1.jpg",
+    name: "محمد زینالی",
+    productName: "ایرپاد",
+    productCount: 2,
+    statusPayment: false,
+  },
+  {
+    id: 2,
+    avatar: "./assets/images/customers/customer-2.jpg",
+    name: " حمید نعمتی",
+    productName: "هندزفری بلوتوثی",
+    productCount: 1,
+    statusPayment: true,
+  },
+  {
+    id: 3,
+    avatar: "./assets/images/customers/customer-3.jpg",
+    name: "  رضا همتلو",
+    productName: " موبایل",
+    productCount: 1,
+    statusPayment: true,
+  },
+  {
+    id: 4,
+    avatar: "./assets/images/customers/customer-4.jpg",
+    name: "محمد محمدی",
+    productName: " فلش مموری",
+    productCount: 1,
+    statusPayment: false,
+  },
+  {
+    id: 5,
+    avatar: "./assets/images/customers/customer-5.jpg",
+    name: "   بابک احمدی",
+    productName: " کول پد",
+    productCount: 1,
+    statusPayment: true,
+  },
+];
+
+////////////////////////////////////////// data page SalesAndManagement //////////////////////////////////////////////
+
+/* *************************************************************************************************************** */
+
+////////////////////////////////////////// data page support //////////////////////////////////////////////
+
 
 export {
   accessItems,
@@ -729,8 +902,11 @@ export {
   notificationItems,
   socialItems,
   StatisticsSliderItems,
+  reportChartData,
+  regionalSalesChartData,
   totalCustomersData,
   averageSale,
   incomeItems,
   allIncomeItemData,
+  recentCustomersData,
 };

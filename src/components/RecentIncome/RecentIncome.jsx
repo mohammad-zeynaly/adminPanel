@@ -14,8 +14,7 @@ function RecentIncome() {
   return (
     <section className="mt-5 sm:mt-8 bg-white rounded-lg p-4">
       <h5 className="font-iranYekanBold my-4 text-center sm:text-right">
-        {" "}
-        درآمد های اخیر شما{" "}
+        درآمد های اخیر شما
       </h5>
       <div className="flex flex-wrap flex-col sm:flex-row justify-between items-center">
         {incomeItems.map((incomeBox) => (
@@ -42,10 +41,10 @@ function RecentIncome() {
               <TableHead>
                 <TableRow>
                   <TableCell>تاریخ</TableCell>
-                  <TableCell align="right">تعداد فروش</TableCell>
-                  <TableCell align="right">سود ناخالص</TableCell>
-                  <TableCell align="right">کسر مالیات</TableCell>
-                  <TableCell align="right">سود خالص</TableCell>
+                  <TableCell align="center">تعداد فروش</TableCell>
+                  <TableCell align="center">سود ناخالص</TableCell>
+                  <TableCell align="center">کسر مالیات</TableCell>
+                  <TableCell align="center">سود خالص</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -57,16 +56,16 @@ function RecentIncome() {
                     <TableCell component="th" scope="row">
                       {incomeData.date}
                     </TableCell>
-                    <TableCell align="right">
+                    <TableCell align="center">
                       {useNumberPersian(incomeData.saleCount)}
                     </TableCell>
-                    <TableCell align="right" className="!text-secondary">
+                    <TableCell align="center" className="!text-secondary">
                       {useNumberPersian(incomeData.grossProfit)} تومان
                     </TableCell>
-                    <TableCell align="right" className="!text-third">
+                    <TableCell align="center" className="!text-third">
                       {useNumberPersian(incomeData.tax)} تومان
                     </TableCell>
-                    <TableCell align="right">
+                    <TableCell align="center">
                       {useNumberPersian(incomeData.netProfit)} تومان
                     </TableCell>
                   </TableRow>
