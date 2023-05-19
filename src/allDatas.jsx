@@ -888,6 +888,27 @@ const recentCustomersData = [
   },
 ];
 
+
+// all data support Time Boxes 
+const supportTimeBoxes = [
+  {
+    id: 1,
+    img: "./assets/images/supportChart/complaintsChart.png",
+    percent: 65,
+    title: "زمان رسیدگی به شکایت",
+    caption: "میانگین زمان رسیدگی",
+    time: "در اولین فرصت کاری",
+  },
+  {
+    id: 2,
+    img: "./assets/images/supportChart/responseSpeedChart.png",
+    percent: 42,
+    title: "میانگین سرعت پاسخ",
+    caption: "میانگین زمان پاسخ",
+    time: "کمتر از یک ساعت",
+  },
+];
+
 ////////////////////////////////////////// data page SalesAndManagement //////////////////////////////////////////////
 
 /* *************************************************************************************************************** */
@@ -909,4 +930,5 @@ export {
   incomeItems,
   allIncomeItemData,
   recentCustomersData,
+  supportTimeBoxes,
 };

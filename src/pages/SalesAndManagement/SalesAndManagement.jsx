@@ -10,14 +10,14 @@ function Sale() {
   return (
     <div className="w-full">
       <Topbar BreadcrumbTitle="فروش و مدیریت مشتری" BreadcrumbLink="/" />
-      <div className="container">
+      <>
         <StatisticsSlider />
         <ChartBar />
         <CustomersChart />
         <SalesChart />
         <RecentIncome />
         <RecentCustomers />
-      </div>
+      </>
     </div>
   );
 }

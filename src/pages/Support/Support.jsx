@@ -1,12 +1,15 @@
-import Topbar from "../../components/Topbar/Topbar"
+import Topbar from "../../components/Topbar/Topbar";
+import SupportTime from "../../components/SupportTime/SupportTime";
 
-function support() {
+function Support() {
   return (
-    <div> 
-      <Topbar BreadcrumbTitle="داشبورد پشتیبانی" BreadcrumbLink="/support"/>
-      پشتیبانی 
+    <div className>
+      <Topbar BreadcrumbTitle="داشبورد پشتیبانی" BreadcrumbLink="/support" />
+      <>
+        <SupportTime />
+      </>
     </div>
-  )
+  );
 }
 
-export default support
+export default Support;

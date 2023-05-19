@@ -21,7 +21,6 @@ function Topbar({ BreadcrumbTitle, BreadcrumbLink }) {
 
   return (
     <header className="header py-4">
-      <div className="container">
         <div className="flex justify-between">
           <div className="flex items-center" id="topbar-right">
             <div className="ml-3 sm:ml-4 lg:hidden">
@@ -127,7 +126,6 @@ function Topbar({ BreadcrumbTitle, BreadcrumbLink }) {
         <div className="block lg:hidden">
           {isShowAdminDetailModal && <AdminDetailModal />}
         </div>
-      </div>
     </header>
   );
 }
