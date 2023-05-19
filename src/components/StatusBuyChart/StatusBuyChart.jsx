@@ -108,7 +108,7 @@ function StatusBuyChart() {
             </div>
           </div>
 
-          <div id="chart" className="my-4 flex justify-center">
+          <div id="chart" className="my-4 flex justify-center w-full status-chart">
             <ResponsiveContainer width="100%" height={250}>
               <LineChart
                 data={data}

@@ -40,4 +40,29 @@ tspan {
   .chart__status-buy {
     transform: translateX(-9%) !important;
   }
+  .report-chart {
+    width: 110% !important;
+    margin-right: 0 !important;
+  }
+  .ticket-chart {
+    width: 113% !important;
+    margin-right: 0 !important;
+  }
+  .status-chart {
+    transform: translateX(22px);
+    width: 110% !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  .status-chart {
+    transform: translateX(16px);
+  }
+}
+@media screen and (max-width: 330px) {
+  .report-chart {
+    width: 113% !important;
+  }
+  .ticket-chart {
+    width: 116% !important;
+  }
 }

@@ -4,7 +4,7 @@ function SupportTime() {
   
 
   return (
-    <section className="mt-5 sm:mt-8 mb-8">
+    <section className="mt-5 sm:mt-8">
       <div className="flex flex-col lg:flex-row justify-between items-center">
         {supportTimeBoxes.map((supportTimeItem) => (
           <div
@@ -19,7 +19,7 @@ function SupportTime() {
                   alt={`نمودار ${supportTimeItem.title}`}
                 />
                 <span className="flex flex-col items-center absolute top-[30%]">
-                  <h6 className="text-lg">{supportTimeItem.percent}%</h6>
+                  <h6 className="text-xl">{supportTimeItem.percent}%</h6>
                   <span className="text-[#a7abc3] text-sm font-iranYekanBold">
                     دستیابی
                   </span>

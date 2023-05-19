@@ -39,12 +39,12 @@ function Reports() {
             <span className="text-sm"> میانگین </span>
           </div>
         </div>
-        <div className="flex justify-center mt-3 sm:mt-4 mr-4 w-full">
+        <div className="flex justify-center my-4 sm:mt-5 w-full mr-4 report-chart">
           <ResponsiveContainer width="100%" height={280}>
             <BarChart
               className="flex justify-center"
               data={reportChartData}
-              barSize={15}
+              barSize={14}
               style={{ direction: "ltr" }}
             >
               <CartesianGrid strokeDasharray="3 3" vertical={false} />
@@ -56,11 +56,13 @@ function Reports() {
                 dataKey="sale"
                 fill="#55A6EB"
                 label={({ value }) => getLabel(value, "sale")}
+                
               />
               <Bar
                 dataKey="average"
                 fill="#5867DD"
                 label={({ value }) => getLabel(value, "average")}
+                
               />
             </BarChart>
           </ResponsiveContainer>

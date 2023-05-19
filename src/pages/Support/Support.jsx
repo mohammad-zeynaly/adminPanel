@@ -1,5 +1,8 @@
 import Topbar from "../../components/Topbar/Topbar";
 import SupportTime from "../../components/SupportTime/SupportTime";
+import TicketMessages from "../../components/TicketMessages/TicketMessages";
+import TicketStatusChart from "../../components/TicketStatusChart/TicketStatusChart"
+
 
 function Support() {
   return (
@@ -7,6 +10,8 @@ function Support() {
       <Topbar BreadcrumbTitle="داشبورد پشتیبانی" BreadcrumbLink="/support" />
       <>
         <SupportTime />
+        <TicketMessages />
+        <TicketStatusChart />
       </>
     </div>
   );

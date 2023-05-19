@@ -1,4 +1,3 @@
-
 ////////////////////////////////////////// data page SalesAndManagement //////////////////////////////////////////////
 
 //data summery in sidebar
@@ -338,7 +337,6 @@ const socialItems = [
   },
 ];
 
-
 // data Slider network sales
 const StatisticsSliderItems = [
   {
@@ -533,8 +531,7 @@ const StatisticsSliderItems = [
   },
 ];
 
-
-// data chart reports 
+// data chart reports
 const reportChartData = [
   {
     name: "1391",
@@ -578,8 +575,7 @@ const reportChartData = [
   },
 ];
 
-
-// data chart regional sales 
+// data chart regional sales
 const regionalSalesChartData = [
   {
     name: "آفریقا",
@@ -603,8 +599,7 @@ const regionalSalesChartData = [
   },
 ];
 
-
-// data chart cutomers 
+// data chart cutomers
 const totalCustomersData = [
   {
     id: 1,
@@ -691,8 +686,7 @@ const totalCustomersData = [
   },
 ];
 
-
-// data networks sales & Average 
+// data networks sales & Average
 const averageSale = [
   {
     id: 1,
@@ -725,7 +719,6 @@ const averageSale = [
     progressValueColor: "[&::-webkit-progress-value]:bg-[#55a6eb]",
   },
 ];
-
 
 //data income Box
 const incomeItems = [
@@ -791,8 +784,7 @@ const incomeItems = [
   },
 ];
 
-
-// all data table income 
+// all data table income
 const allIncomeItemData = [
   {
     id: 1,
@@ -844,7 +836,7 @@ const allIncomeItemData = [
   },
 ];
 
-// all data recent customers data 
+// all data recent customers data
 const recentCustomersData = [
   {
     id: 1,
@@ -888,8 +880,7 @@ const recentCustomersData = [
   },
 ];
 
-
-// all data support Time Boxes 
+// all data support Time Boxes
 const supportTimeBoxes = [
   {
     id: 1,
@@ -916,6 +907,123 @@ const supportTimeBoxes = [
 ////////////////////////////////////////// data page support //////////////////////////////////////////////
 
 
+// all data ticket messages items
+const ticketMessagesItems = [
+  {
+    id: 1,
+    ticketTitle: " تیکت جدید",
+    ticketCount: 321,
+    growth: 1.2,
+    growthColor: "text-secondary",
+    progressColor: "[&::-webkit-progress-value]:bg-primary",
+    progressPercent: 85,
+  },
+  {
+    id: 2,
+    ticketTitle: " تیکت حل شده",
+    ticketCount: 70,
+    growth: "2.2",
+    growthColor: "text-third",
+    progressColor: "[&::-webkit-progress-value]:bg-secondary",
+    progressPercent: 25,
+  },
+  {
+    id: 3,
+    ticketTitle: "تیکت باز",
+    ticketCount: 100,
+    growth: 4.2,
+    growthColor: "text-secondary",
+    progressColor: "[&::-webkit-progress-value]:bg-[#55a6eb]",
+    progressPercent: 55,
+  },
+  {
+    id: 4,
+    ticketTitle: " تیکت در انتظار",
+    ticketCount: 125,
+    growth: 4.2,
+    growthColor: "text-secondary",
+    progressColor: "[&::-webkit-progress-value]:bg-[#ffb822]",
+    progressPercent: 75,
+  },
+];
+
+
+// all data ticket status chart data
+const ticketStatusChartData = [
+  {
+    name: "فروردین",
+    newTicket: 40,
+    solvedTicket: 10,
+    pendingTicket: 17,
+  },
+  {
+    name: "اردیبهشت",
+    newTicket: 47,
+    solvedTicket: 12,
+    pendingTicket: 11,
+  },
+  {
+    name: "خرداد",
+    newTicket: 44,
+    solvedTicket: 7,
+    pendingTicket: 22,
+  },
+  {
+    name: "تیر",
+    newTicket: 38,
+    solvedTicket: 5,
+    pendingTicket: 18,
+  },
+  {
+    name: "مرداد",
+    newTicket: 27,
+    solvedTicket: 4,
+    pendingTicket: 12,
+  },
+  {
+    name: "شهریور",
+    newTicket: 40,
+    solvedTicket: 10,
+    pendingTicket: 17,
+  },
+  {
+    name: "مهر",
+    newTicket: 47,
+    solvedTicket: 12,
+    pendingTicket: 11,
+  },
+  {
+    name: "آبان",
+    newTicket: 44,
+    solvedTicket: 7,
+    pendingTicket: 22,
+  },
+  {
+    name: "آذر",
+    newTicket: 38,
+    solvedTicket: 5,
+    pendingTicket: 18,
+  },
+  {
+    name: "دی",
+    newTicket: 27,
+    solvedTicket: 4,
+    pendingTicket: 12,
+  },
+  {
+    name: "بهمن",
+    newTicket: 40,
+    solvedTicket: 10,
+    pendingTicket: 17,
+  },
+  {
+    name: "اسفند",
+    newTicket: 27,
+    solvedTicket: 12,
+    pendingTicket: 11,
+  },
+];
+
 export {
   accessItems,
   summaryItems,
@@ -931,4 +1039,6 @@ export {
   allIncomeItemData,
   recentCustomersData,
   supportTimeBoxes,
+  ticketMessagesItems,
+  ticketStatusChartData,
 };
