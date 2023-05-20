@@ -20,7 +20,7 @@ function TicketMessages() {
 
               <div className="flex items-center ">
                 <span
-                  className={`${ticketItem.growthColor}text-secondary text-2sm`}
+                  className={`${ticketItem.growthColor } text-secondary text-2sm`}
                 >
                   {ticketItem.growth}%
                 </span>

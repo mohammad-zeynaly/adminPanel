@@ -8,80 +8,8 @@ import {
   Line,
 } from "recharts";
 import useNumberPersian from "../../hooks/useNumberPersian";
-
-const data = [
-  {
-    name: "فروردین",
-    success: 10,
-    back: 15,
-  },
-  {
-    name: "اردیبهشت",
-
-    success: 20,
-    back: 10,
-  },
-  {
-    name: "خرداد",
-
-    success: 35,
-    back: 11,
-  },
-  {
-    name: "تیر",
-
-    success: 43,
-    back: 5,
-  },
-  {
-    name: "مرداد",
-
-    success: 57,
-    back: 8,
-  },
-  {
-    name: "شهریور",
-
-    success: 64,
-    back: 14,
-  },
-  {
-    name: "مهر",
-
-    success: 73,
-    back: 9,
-  },
-  {
-    name: "آبان",
-
-    success: 57,
-    back: 13,
-  },
-  {
-    name: "آذر",
-
-    success: 45,
-    back: 7,
-  },
-  {
-    name: "دی",
-
-    success: 62,
-    back: 14,
-  },
-  {
-    name: "بهمن",
-
-    success: 96,
-    back: 11,
-  },
-  {
-    name: "اسفند",
-
-    success: 120,
-    back: 15,
-  },
-];
+import CircleIcon from "../CircleIcon/CircleIcon";
+import { statusBuyChartData } from "../../allDatas";
 
 function StatusBuyChart() {
   const getLabel = (value, name) => {
@@ -99,19 +27,22 @@ function StatusBuyChart() {
         <div className="p-4">
           <div className="flex items-center">
             <div className="flex items-center">
-              <span className="block w-3 h-3 rounded-full bg-secondary"></span>
+              <CircleIcon bgCircle="bg-secondary" />
               <h6 className="mr-2 text-2sm">موفقیت</h6>
             </div>
             <div className="flex items-center mr-4">
-              <span className="block w-3 h-3 rounded-full bg-third"></span>
+              <CircleIcon bgCircle="bg-third" />
               <h6 className="mr-2 text-2sm">بازگشت</h6>
             </div>
           </div>
 
-          <div id="chart" className="my-4 flex justify-center w-full status-chart">
+          <div
+            id="chart"
+            className="my-4 flex justify-center w-full status-chart"
+          >
             <ResponsiveContainer width="100%" height={250}>
               <LineChart
-                data={data}
+                data={statusBuyChartData}
                 width="100%"
                 height={250}
                 style={{ direction: "ltr" }}
@@ -122,13 +53,13 @@ function StatusBuyChart() {
                 <YAxis />
                 <Tooltip formatter={(value, name) => [getLabel(value, name)]} />
 
-                  <Line
-                    type="monotone"
-                    dataKey="success"
-                    stroke="#0abb87"
-                    strokeDasharray="5 5"
-                    label={({ value }) => getLabel(value, "success")}
-                  />
+                <Line
+                  type="monotone"
+                  dataKey="success"
+                  stroke="#0abb87"
+                  strokeDasharray="5 5"
+                  label={({ value }) => getLabel(value, "success")}
+                />
                 <Line
                   type="monotone"
                   dataKey="back"

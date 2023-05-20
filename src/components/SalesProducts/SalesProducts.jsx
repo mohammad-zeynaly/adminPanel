@@ -53,18 +53,15 @@ function SalesProducts() {
           <div className="flex justify-between items-center flex-wrap">
             {allProductProgress.map((productProgress) => (
               <div key={productProgress.id} className="mt-5 w-full sm:w-[48%]">
-                <strong className="text-lg font-iranYekanBold">
+                <h5 className="text-lg font-iranYekanBold">
                   {useNumberPersian(productProgress.price)}
-                  <span className="text-sm pr-2">
-                    {" "}
-                    {productProgress.title}{" "}
-                  </span>
-                </strong>
+                  <span className="text-sm pr-2">{productProgress.title}</span>
+                </h5>
 
                 <ProgressBar
                   progressClass="mt-3"
                   progressValue={productProgress.progressValue}
-                  progressColorValue="[&::-webkit-progress-value]:bg-primary"
+                  progressColorValue="bg-primary"
                 />
                 <span className="flex items-center">
                   <svg

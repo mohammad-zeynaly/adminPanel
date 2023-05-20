@@ -356,7 +356,7 @@ const StatisticsSliderItems = [
         <path d="M11 2a1 1 0 011-1h2a1 1 0 011 1v12h.5a.5.5 0 010 1H.5a.5.5 0 010-1H1v-3a1 1 0 011-1h2a1 1 0 011 1v3h1V7a1 1 0 011-1h2a1 1 0 011 1v7h1V2z"></path>
       </svg>
     ),
-    progressValueColor: "[&::-webkit-progress-value]:bg-third",
+    progressValueColor: "bg-third",
     textColor: "text-third",
     bgColor: "bg-third",
     count: 2_587,
@@ -381,7 +381,7 @@ const StatisticsSliderItems = [
         />
       </svg>
     ),
-    progressValueColor: "[&::-webkit-progress-value]:bg-[#0abb87]",
+    progressValueColor: "bg-[#0abb87]",
     textColor: "text-[#0abb87]",
     bgColor: "bg-[#0abb87]",
     count: 562,
@@ -406,7 +406,7 @@ const StatisticsSliderItems = [
         />
       </svg>
     ),
-    progressValueColor: "[&::-webkit-progress-value]:bg-[#55a6eb]",
+    progressValueColor: "bg-[#55a6eb]",
     textColor: "text-[#55a6eb]",
     bgColor: "bg-[#55a6eb]",
     count: 256,
@@ -429,7 +429,7 @@ const StatisticsSliderItems = [
         <path d="M9.5 3H12V0H9.5C7.57 0 6 1.57 6 3.5V5H4v3h2v8h3V8h2.5l.5-3H9V3.5c0-.271.229-.5.5-.5z"></path>
       </svg>
     ),
-    progressValueColor: "[&::-webkit-progress-value]:bg-[#3b5998]",
+    progressValueColor: "bg-[#3b5998]",
     textColor: "text-[#3b5998]",
     bgColor: "bg-[#3b5998]",
     count: 147,
@@ -452,7 +452,7 @@ const StatisticsSliderItems = [
         <path d="M13.601 2.326A7.854 7.854 0 007.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 003.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0013.6 2.326zM7.994 14.521a6.573 6.573 0 01-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 01-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 014.66 1.931 6.557 6.557 0 011.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 00-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
       </svg>
     ),
-    progressValueColor: "[&::-webkit-progress-value]:bg-[#43d854]",
+    progressValueColor: "bg-[#43d854]",
     textColor: "text-[#43d854]",
     bgColor: "bg-[#43d854]",
     count: 847,
@@ -475,7 +475,7 @@ const StatisticsSliderItems = [
         <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 00-1.417.923A3.927 3.927 0 00.42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 001.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 00-.923-1.417A3.911 3.911 0 0013.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 01-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 01-.92-.598 2.48 2.48 0 01-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 100 1.92.96.96 0 000-1.92zm-4.27 1.122a4.109 4.109 0 100 8.217 4.109 4.109 0 000-8.217zm0 1.441a2.667 2.667 0 110 5.334 2.667 2.667 0 010-5.334z"></path>
       </svg>
     ),
-    progressValueColor: "[&::-webkit-progress-value]:bg-[#3f729b]",
+    progressValueColor: "bg-[#3f729b]",
     textColor: "text-[#3f729b]",
     bgColor: "bg-[#3f729b]",
     count: 1968,
@@ -498,7 +498,7 @@ const StatisticsSliderItems = [
         <path d="M15.545 6.558a9.42 9.42 0 01.139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 118 0a7.689 7.689 0 015.352 2.082l-2.284 2.284A4.347 4.347 0 008 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 000 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 001.599-2.431H8v-3.08h7.545z"></path>
       </svg>
     ),
-    progressValueColor: "[&::-webkit-progress-value]:bg-[#FF3D00]",
+    progressValueColor: "bg-[#FF3D00]",
     textColor: "text-[#FF3D00]",
     bgColor: "bg-[#FF3D00]",
     count: 3654,
@@ -523,7 +523,7 @@ const StatisticsSliderItems = [
         />
       </svg>
     ),
-    progressValueColor: "[&::-webkit-progress-value]:bg-[#ffb822]",
+    progressValueColor: "bg-[#ffb822]",
     textColor: "text-[#ffb822]",
     bgColor: "bg-[#ffb822]",
     count: 206,
@@ -599,7 +599,7 @@ const regionalSalesChartData = [
   },
 ];
 
-// data chart cutomers
+// data chart customers
 const totalCustomersData = [
   {
     id: 1,
@@ -686,37 +686,113 @@ const totalCustomersData = [
   },
 ];
 
+
+// data chart status buy chart 
+const statusBuyChartData = [
+  {
+    name: "فروردین",
+    success: 10,
+    back: 15,
+  },
+  {
+    name: "اردیبهشت",
+
+    success: 20,
+    back: 10,
+  },
+  {
+    name: "خرداد",
+
+    success: 35,
+    back: 11,
+  },
+  {
+    name: "تیر",
+
+    success: 43,
+    back: 5,
+  },
+  {
+    name: "مرداد",
+
+    success: 57,
+    back: 8,
+  },
+  {
+    name: "شهریور",
+
+    success: 64,
+    back: 14,
+  },
+  {
+    name: "مهر",
+
+    success: 73,
+    back: 9,
+  },
+  {
+    name: "آبان",
+
+    success: 57,
+    back: 13,
+  },
+  {
+    name: "آذر",
+
+    success: 45,
+    back: 7,
+  },
+  {
+    name: "دی",
+
+    success: 62,
+    back: 14,
+  },
+  {
+    name: "بهمن",
+
+    success: 96,
+    back: 11,
+  },
+  {
+    name: "اسفند",
+
+    success: 120,
+    back: 15,
+  },
+];
+
 // data networks sales & Average
 const averageSale = [
   {
     id: 1,
     title: "گوگل",
     progressPercent: 42,
-    progressValueColor: "[&::-webkit-progress-value]:bg-[#FF3D00]",
+    progressValueColor: "bg-[#FF3D00]",
   },
   {
     id: 2,
     title: "اینستاگرام",
     progressPercent: 34,
-    progressValueColor: "[&::-webkit-progress-value]:bg-[#3f729b]",
+    progressValueColor: "bg-[#3f729b]",
   },
   {
     id: 3,
     title: "واتس اپ",
     progressPercent: 60,
-    progressValueColor: "[&::-webkit-progress-value]:bg-[#43d854]",
+    progressValueColor: "bg-[#43d854]",
   },
   {
     id: 4,
     title: "فیسبوک",
     progressPercent: 20,
-    progressValueColor: "[&::-webkit-progress-value]:bg-[#3b5998]",
+    progressValueColor: "bg-[#3b5998]",
   },
   {
     id: 5,
     title: "لینکدین",
     progressPercent: 30,
-    progressValueColor: "[&::-webkit-progress-value]:bg-[#55a6eb]",
+    progressValueColor: "bg-[#55a6eb]",
   },
 ];
 
@@ -880,6 +956,11 @@ const recentCustomersData = [
   },
 ];
 
+
+
+/* *************************************************************************************************************** */
+
+////////////////////////////////////////// data page support //////////////////////////////////////////////
 // all data support Time Boxes
 const supportTimeBoxes = [
   {
@@ -900,12 +981,6 @@ const supportTimeBoxes = [
   },
 ];
 
-////////////////////////////////////////// data page SalesAndManagement //////////////////////////////////////////////
-
-/* *************************************************************************************************************** */
-
-////////////////////////////////////////// data page support //////////////////////////////////////////////
-
 
 // all data ticket messages items
 const ticketMessagesItems = [
@@ -915,7 +990,7 @@ const ticketMessagesItems = [
     ticketCount: 321,
     growth: 1.2,
     growthColor: "text-secondary",
-    progressColor: "[&::-webkit-progress-value]:bg-primary",
+    progressColor: "bg-primary",
     progressPercent: 85,
   },
   {
@@ -924,7 +999,7 @@ const ticketMessagesItems = [
     ticketCount: 70,
     growth: "2.2",
     growthColor: "text-third",
-    progressColor: "[&::-webkit-progress-value]:bg-secondary",
+    progressColor: "bg-secondary",
     progressPercent: 25,
   },
   {
@@ -933,7 +1008,7 @@ const ticketMessagesItems = [
     ticketCount: 100,
     growth: 4.2,
     growthColor: "text-secondary",
-    progressColor: "[&::-webkit-progress-value]:bg-[#55a6eb]",
+    progressColor: "bg-[#55a6eb]",
     progressPercent: 55,
   },
   {
@@ -942,7 +1017,7 @@ const ticketMessagesItems = [
     ticketCount: 125,
     growth: 4.2,
     growthColor: "text-secondary",
-    progressColor: "[&::-webkit-progress-value]:bg-[#ffb822]",
+    progressColor: "bg-[#ffb822]",
     progressPercent: 75,
   },
 ];
@@ -1024,6 +1099,154 @@ const ticketStatusChartData = [
   },
 ];
 
+
+/* *************************************************************************************************************** */
+
+////////////////////////////////////////// data page wesite statistics  //////////////////////////////////////////////
+
+// data general Statistics Items 
+const generalStatisticsData = [
+  {
+    id: 1,
+    statisticsCount: 3_605,
+    type: "تعداد کلیک",
+    color: "text-primary",
+    caption: "لورم ایپسوم",
+    avatar: (
+      <svg width="60" height="60" className="peity">
+        <path
+          fill="rgba(88, 103, 221, 0.3)"
+          d="M30 0a30 30 0 0117.634 54.27L30 30"
+          data-value="2"
+        ></path>
+        <path
+          fill="#5867DD"
+          d="M47.634 54.27A30 30 0 1130 0v30"
+          data-value="3"
+        ></path>
+      </svg>
+    ),
+  },
+  {
+    id: 2,
+    statisticsCount: 3_137,
+    type: "تعداد بازدید",
+    color: "text-secondary",
+    caption: "لورم ایپسوم",
+    avatar: (
+      <svg width="60" height="60" className="peity">
+        <path
+          fill="rgba(10, 187, 135, 0.3)"
+          d="M30 0A30 30 0 111.468 20.73L30 30"
+          data-value="4"
+        ></path>
+        <path
+          fill="#0ABB87"
+          d="M1.468 20.73A30 30 0 0130 0v30"
+          data-value="1"
+        ></path>
+      </svg>
+    ),
+  },
+  {
+    id: 3,
+    statisticsCount: 8_765,
+    type: "مجموع تبدیل",
+    color: "text-[#FFB822]",
+    caption: "لورم ایپسوم",
+    avatar: (
+      <svg width="60" height="60" className="peity">
+        <path
+          fill="rgba(255, 184, 34, 0.3)"
+          d="M30 0a30 30 0 0128.532 20.73L30 30"
+          data-value="1"
+        ></path>
+        <path
+          fill="#FFB822"
+          d="M58.532 20.73A30 30 0 1130 0v30"
+          data-value="4"
+        ></path>
+      </svg>
+    ),
+  },
+  {
+    id: 4,
+    statisticsCount: 68,
+    type: "نرخ بارگذاری صفحه",
+    color: "text-[#55A6EB]",
+    caption: "لورم ایپسوم",
+    avatar: (
+      <svg width="60" height="60" className="peity">
+        <path
+          fill="rgba(85, 166, 235, 0.3)"
+          d="M30 0a30 30 0 0117.634 54.27L30 30"
+          data-value="2"
+        ></path>
+        <path
+          fill="#55A6EB"
+          d="M47.634 54.27A30 30 0 1130 0v30"
+          data-value="3"
+        ></path>
+      </svg>
+    ),
+  },
+];
+
+
+const devicesStatisticsChartData = [
+  {
+    mobile: 2000,
+    desktop: 1000,
+    other: 250,
+  },
+  {
+    mobile: 2150,
+    desktop: 1050,
+    other: 280,
+  },
+  {
+    mobile: 2300,
+    desktop: 1200,
+    other: 350,
+  },
+  {
+    mobile: 2400,
+    desktop: 980,
+    other: 320,
+  },
+  {
+    mobile: 2500,
+    desktop: 850,
+    other: 200,
+  },
+  {
+    mobile: 2600,
+    desktop: 1300,
+    other: 500,
+  },
+  {
+    mobile: 4300,
+    desktop: 1800,
+    other: 550,
+  },
+  {
+    mobile: 3000,
+    desktop: 1500,
+    other: 400,
+  },
+  {
+    mobile: 3500,
+    desktop: 1300,
+    other: 450,
+  },
+  {
+    mobile: 3300,
+    desktop: 1150,
+    other: 390,
+  },
+];
+
+
 export {
   accessItems,
   summaryItems,
@@ -1041,4 +1264,7 @@ export {
   supportTimeBoxes,
   ticketMessagesItems,
   ticketStatusChartData,
+  statusBuyChartData,
+  generalStatisticsData,
+  devicesStatisticsChartData,
 };

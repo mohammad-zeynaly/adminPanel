@@ -853,6 +853,10 @@ video {
   display: none;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -982,6 +986,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-4 {
@@ -1115,9 +1123,19 @@ video {
   background-color: rgb(255 61 0 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FFB822\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 184 34 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#FFEABC\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 234 188 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#e9ecef\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 236 239 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#f5f5f5\] {
@@ -1140,6 +1158,11 @@ video {
 
 .bg-\[rgba\(255\2c 184\2c 34\2c 0\.3\)\] {
   background-color: rgba(255,184,34,0.3);
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 103 221 / var(--tw-bg-opacity));
 }
 
 .bg-secondary {
@@ -1219,14 +1242,13 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-\[5px\] {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
 .py-\[6px\] {
   padding-top: 6px;
   padding-bottom: 6px;
+}
+
+.pb-\[5px\] {
+  padding-bottom: 5px;
 }
 
 .pr-2 {
@@ -1302,14 +1324,6 @@ video {
   font-weight: 900;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
-.font-extrabold {
-  font-weight: 800;
-}
-
 .\!text-secondary {
   --tw-text-opacity: 1 !important;
   color: rgb(10 187 135 / var(--tw-text-opacity)) !important;
@@ -1355,6 +1369,11 @@ video {
   color: rgb(67 216 84 / var(--tw-text-opacity));
 }
 
+.text-\[\#55A6EB\] {
+  --tw-text-opacity: 1;
+  color: rgb(85 166 235 / var(--tw-text-opacity));
+}
+
 .text-\[\#55a6eb\] {
   --tw-text-opacity: 1;
   color: rgb(85 166 235 / var(--tw-text-opacity));
@@ -1378,6 +1397,11 @@ video {
 .text-\[\#FF3D00\] {
   --tw-text-opacity: 1;
   color: rgb(255 61 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#FFB822\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 184 34 / var(--tw-text-opacity));
 }
 
 .text-\[\#FFBA27\] {
@@ -1662,67 +1686,4 @@ video {
   .\32xl\:pr-72 {
     padding-right: 18rem;
   }
-}
-
-.\[\&\:\:-webkit-progress-bar\]\:rounded-lg::-webkit-progress-bar {
-  border-radius: 0.5rem;
-}
-
-.\[\&\:\:-webkit-progress-bar\]\:bg-\[\#e9ecef\]::-webkit-progress-bar {
-  --tw-bg-opacity: 1;
-  background-color: rgb(233 236 239 / var(--tw-bg-opacity));
-}
-
-.\[\&\:\:-webkit-progress-value\]\:rounded-lg::-webkit-progress-value {
-  border-radius: 0.5rem;
-}
-
-.\[\&\:\:-webkit-progress-value\]\:bg-\[\#0abb87\]::-webkit-progress-value {
-  --tw-bg-opacity: 1;
-  background-color: rgb(10 187 135 / var(--tw-bg-opacity));
-}
-
-.\[\&\:\:-webkit-progress-value\]\:bg-\[\#3b5998\]::-webkit-progress-value {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 89 152 / var(--tw-bg-opacity));
-}
-
-.\[\&\:\:-webkit-progress-value\]\:bg-\[\#3f729b\]::-webkit-progress-value {
-  --tw-bg-opacity: 1;
-  background-color: rgb(63 114 155 / var(--tw-bg-opacity));
-}
-
-.\[\&\:\:-webkit-progress-value\]\:bg-\[\#43d854\]::-webkit-progress-value {
-  --tw-bg-opacity: 1;
-  background-color: rgb(67 216 84 / var(--tw-bg-opacity));
-}
-
-.\[\&\:\:-webkit-progress-value\]\:bg-\[\#55a6eb\]::-webkit-progress-value {
-  --tw-bg-opacity: 1;
-  background-color: rgb(85 166 235 / var(--tw-bg-opacity));
-}
-
-.\[\&\:\:-webkit-progress-value\]\:bg-\[\#FF3D00\]::-webkit-progress-value {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 61 0 / var(--tw-bg-opacity));
-}
-
-.\[\&\:\:-webkit-progress-value\]\:bg-\[\#ffb822\]::-webkit-progress-value {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 184 34 / var(--tw-bg-opacity));
-}
-
-.\[\&\:\:-webkit-progress-value\]\:bg-primary::-webkit-progress-value {
-  --tw-bg-opacity: 1;
-  background-color: rgb(88 103 221 / var(--tw-bg-opacity));
-}
-
-.\[\&\:\:-webkit-progress-value\]\:bg-secondary::-webkit-progress-value {
-  --tw-bg-opacity: 1;
-  background-color: rgb(10 187 135 / var(--tw-bg-opacity));
-}
-
-.\[\&\:\:-webkit-progress-value\]\:bg-third::-webkit-progress-value {
-  --tw-bg-opacity: 1;
-  background-color: rgb(224 75 75 / var(--tw-bg-opacity));
 }

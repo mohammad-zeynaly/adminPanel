@@ -11,7 +11,7 @@ import { reportChartData } from "../../allDatas";
 import useNumberPersian from "../../hooks/useNumberPersian";
 
 function Reports() {
-  const getLabel = (value, name) => {
+  const getTooltipLabel = (value, name) => {
     if (name === "sale") {
       return `مجموع فروش: ${value}`;
     } else {
@@ -50,18 +50,18 @@ function Reports() {
               <CartesianGrid strokeDasharray="3 3" vertical={false} />
               <XAxis dataKey="name" />
               <YAxis className="mr-8" />
-              <Tooltip formatter={(value, name) => [getLabel(value, name)]} />
+              <Tooltip formatter={(value, name) => [getTooltipLabel(value, name)]} />
 
               <Bar
                 dataKey="sale"
                 fill="#55A6EB"
-                label={({ value }) => getLabel(value, "sale")}
+                label={({ value }) => getTooltipLabel(value, "sale")}
                 
               />
               <Bar
                 dataKey="average"
                 fill="#5867DD"
-                label={({ value }) => getLabel(value, "average")}
+                label={({ value }) => getTooltipLabel(value, "average")}
                 
               />
             </BarChart>

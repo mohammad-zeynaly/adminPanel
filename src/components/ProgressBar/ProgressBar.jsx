@@ -1,12 +1,10 @@
-
 function ProgressBar({ progressClass, progressValue, progressColorValue }) {
   return (
-    <progress
-      className={`${progressClass} py-[5px] w-full [&::-webkit-progress-bar]:rounded-lg [&::-webkit-progress-value]:rounded-lg [&::-webkit-progress-bar]:bg-[#e9ecef] ${progressColorValue}`}
-      value={progressValue}
-      max="100"
-    ></progress>
+    <div className={`${progressClass} mb-2 pb-[5px] w-full h-1 rounded-lg bg-[#e9ecef]`}>
+      <div className={`${progressColorValue} pb-[5px] h-1 rounded-lg`} style={{width: progressValue + '%'}}></div>
+    </div>
   );
 }
 
 export default ProgressBar;
+

@@ -1,13 +1,16 @@
 import useNumberPersian from "../../hooks/useNumberPersian";
 import { incomeItems } from "../../allDatas";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
 import RtlConfigMui from "../RtlConfigMui/RtlConfigMui";
+import {
+  Table,
+  TableContainer,
+  TableHead,
+  TableRow,
+  TableCell,
+  TableBody,
+  Paper,
+} from "@mui/material";
+
 import { allIncomeItemData } from "../../allDatas";
 
 function RecentIncome() {
@@ -37,7 +40,7 @@ function RecentIncome() {
       <div className="my-6">
         <RtlConfigMui className="">
           <TableContainer dir="rtl" component={Paper}>
-            <Table sx={{ minWidth: 650 }} aria-label="simple table">
+            <Table sx={{ minWidth: 575 }} aria-label="simple table">
               <TableHead>
                 <TableRow>
                   <TableCell>تاریخ</TableCell>

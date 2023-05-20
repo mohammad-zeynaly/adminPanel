@@ -26,7 +26,7 @@ function SupportTime() {
                 </span>
               </div>
               <div className="flex flex-col text-2sm lg:text-sm mr-3 mt-4 lg:my-0">
-                <h6 className="font-iranYekanBold font-bold">
+                <h6 className="font-iranYekanBold">
                   {supportTimeItem.title}
                 </h6>
                 <span className="pt-3 text-[#a7abc3]">
