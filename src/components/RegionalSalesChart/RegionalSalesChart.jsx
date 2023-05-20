@@ -9,6 +9,7 @@ import {
 } from "recharts";
 import {regionalSalesChartData} from "../../allDatas"
 import useNumberPersian from "../../hooks/useNumberPersian";
+import SectionTitle from "../SectionTitle/SectionTitle"
 
 
 function RegionalSalesChart() {
@@ -21,7 +22,7 @@ function RegionalSalesChart() {
   return (
     <div className="w-full xl:w-[49%]">
       <div className="bg-white rounded-lg p-4 w-full">
-        <h4> فروش های منطقه ای </h4>
+        <SectionTitle> فروش های منطقه ای </SectionTitle>
 
         <div className="flex justify-center mt-3 sm:mt-4 mr-4 w-full ">
           <ResponsiveContainer width="100%" height={280}>

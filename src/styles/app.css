@@ -1053,6 +1053,21 @@ video {
   background-color: rgb(10 187 135 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#259645\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 150 69 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#26A5F3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 165 243 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#2EC2DD\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 194 221 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#3b5998\] {
   --tw-bg-opacity: 1;
   background-color: rgb(59 89 152 / var(--tw-bg-opacity));
@@ -1123,6 +1138,16 @@ video {
   background-color: rgb(255 61 0 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FF4B4B\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 75 75 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FF652A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 101 42 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#FFB822\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 184 34 / var(--tw-bg-opacity));
@@ -1178,6 +1203,16 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#31A450\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 164 80 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#32A651\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 166 81 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/assets\/images\/messageBg\.png\'\)\] {
@@ -1663,6 +1698,10 @@ video {
 @media (min-width: 1280px) {
   .xl\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .xl\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .xl\:mr-4 {

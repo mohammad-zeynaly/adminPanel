@@ -1,24 +1,16 @@
+import TableTemplate from "../TableTemplate/TableTemplate";
 import useNumberPersian from "../../hooks/useNumberPersian";
 import { incomeItems } from "../../allDatas";
-import RtlConfigMui from "../RtlConfigMui/RtlConfigMui";
-import {
-  Table,
-  TableContainer,
-  TableHead,
-  TableRow,
-  TableCell,
-  TableBody,
-  Paper,
-} from "@mui/material";
-
+import { TableHead, TableRow, TableCell, TableBody } from "@mui/material";
 import { allIncomeItemData } from "../../allDatas";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 function RecentIncome() {
   return (
     <section className="mt-5 sm:mt-8 bg-white rounded-lg p-4">
-      <h5 className="font-iranYekanBold my-4 text-center sm:text-right">
+      <SectionTitle sectionClass="font-iranYekanBold my-4 text-center sm:text-right">
         درآمد های اخیر شما
-      </h5>
+      </SectionTitle>
       <div className="flex flex-wrap flex-col sm:flex-row justify-between items-center">
         {incomeItems.map((incomeBox) => (
           <div key={incomeBox.id} className="flex items-center mb-4 sm:mb-0">
@@ -38,45 +30,43 @@ function RecentIncome() {
         ))}
       </div>
       <div className="my-6">
-        <RtlConfigMui className="">
-          <TableContainer dir="rtl" component={Paper}>
-            <Table sx={{ minWidth: 575 }} aria-label="simple table">
-              <TableHead>
-                <TableRow>
-                  <TableCell>تاریخ</TableCell>
-                  <TableCell align="center">تعداد فروش</TableCell>
-                  <TableCell align="center">سود ناخالص</TableCell>
-                  <TableCell align="center">کسر مالیات</TableCell>
-                  <TableCell align="center">سود خالص</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {allIncomeItemData.map((incomeData) => (
-                  <TableRow
-                    key={incomeData.id}
-                    sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                  >
-                    <TableCell component="th" scope="row">
-                      {incomeData.date}
-                    </TableCell>
-                    <TableCell align="center">
-                      {useNumberPersian(incomeData.saleCount)}
-                    </TableCell>
-                    <TableCell align="center" className="!text-secondary">
-                      {useNumberPersian(incomeData.grossProfit)} تومان
-                    </TableCell>
-                    <TableCell align="center" className="!text-third">
-                      {useNumberPersian(incomeData.tax)} تومان
-                    </TableCell>
-                    <TableCell align="center">
-                      {useNumberPersian(incomeData.netProfit)} تومان
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
-        </RtlConfigMui>
+        <TableTemplate tableScrollSize={575}>
+          {/* ------ Table Header ------ */}
+          <TableHead>
+            <TableRow>
+              <TableCell>تاریخ</TableCell>
+              <TableCell align="center">تعداد فروش</TableCell>
+              <TableCell align="center">سود ناخالص</TableCell>
+              <TableCell align="center">کسر مالیات</TableCell>
+              <TableCell align="center">سود خالص</TableCell>
+            </TableRow>
+          </TableHead>
+          {/* ------ Table Body ------ */}
+          <TableBody>
+            {allIncomeItemData.map((incomeData) => (
+              <TableRow
+                key={incomeData.id}
+                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+              >
+                <TableCell component="th" scope="row">
+                  {incomeData.date}
+                </TableCell>
+                <TableCell align="center">
+                  {useNumberPersian(incomeData.saleCount)}
+                </TableCell>
+                <TableCell align="center" className="!text-secondary">
+                  {useNumberPersian(incomeData.grossProfit)} تومان
+                </TableCell>
+                <TableCell align="center" className="!text-third">
+                  {useNumberPersian(incomeData.tax)} تومان
+                </TableCell>
+                <TableCell align="center">
+                  {useNumberPersian(incomeData.netProfit)} تومان
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </TableTemplate>
       </div>
     </section>
   );

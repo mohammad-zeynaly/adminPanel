@@ -8,6 +8,7 @@ import {
   Bar,
 } from "recharts";
 import { ticketStatusChartData } from "../../allDatas";
+import SectionTitle from "../SectionTitle/SectionTitle"
 import CircleIcon from "../CircleIcon/CircleIcon";
 
 function TicketStatusChart() {
@@ -24,7 +25,7 @@ function TicketStatusChart() {
   return (
     <section className="mt-5 mb-5 sm:mt-8 sm:mb-8">
       <div className="bg-white rounded-lg p-4">
-        <h5>وضعیت تیکت </h5>
+        <SectionTitle>وضعیت تیکت </SectionTitle>
         <div className="my-5 flex flex-wrap items-center justify-center">
           <div className="flex items-center text-sm font-iranYekanBold mr-4 mb-3 sm:mb-0">
             <CircleIcon bgCircle="bg-[#BAC2FF]" />

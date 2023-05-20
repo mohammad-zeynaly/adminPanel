@@ -9,6 +9,7 @@ import {
 } from "recharts";
 import { reportChartData } from "../../allDatas";
 import useNumberPersian from "../../hooks/useNumberPersian";
+import SectionTitle from "../SectionTitle/SectionTitle"
 
 function Reports() {
   const getTooltipLabel = (value, name) => {
@@ -22,7 +23,7 @@ function Reports() {
   return (
     <div className="w-full mb-5 xl:w-[49%] xl:mb-0">
       <div className="bg-white rounded-lg p-4 w-full">
-        <h4>گزارشات </h4>
+        <SectionTitle>گزارشات</SectionTitle>
         <div className="flex flex-col sm:flex-row sm:items-center justify-between mt-4">
           <div className="text-primary">
             <h6 className="text-lg font-iranYekanBold">

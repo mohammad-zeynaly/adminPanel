@@ -1,6 +1,7 @@
 import { useState } from "react";
 import useNumberPersian from "../../hooks/useNumberPersian";
 import ProgressBar from "../ProgressBar/ProgressBar";
+import SectionTitle from "../SectionTitle/SectionTitle"
 
 function SalesProducts() {
   const [allProductProgress, setAllProductProgress] = useState([
@@ -25,9 +26,9 @@ function SalesProducts() {
   return (
     <div className="w-full xl:w-[49%]">
       <div className="bg-white rounded-lg  ">
-        <h4 className="border-b p-4 text-2sm font-iranYekanBold">
+        <SectionTitle sectionClass="border-b p-4 text-2sm font-iranYekanBold">
           فروش محصولات
-        </h4>
+        </SectionTitle>
 
         <div className="p-4">
           <div className="flex items-center">

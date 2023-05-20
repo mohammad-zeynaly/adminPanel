@@ -10,6 +10,7 @@ import {
 import useNumberPersian from "../../hooks/useNumberPersian";
 import CircleIcon from "../CircleIcon/CircleIcon";
 import { statusBuyChartData } from "../../allDatas";
+import SectionTitle from "../SectionTitle/SectionTitle"
 
 function StatusBuyChart() {
   const getLabel = (value, name) => {
@@ -23,7 +24,7 @@ function StatusBuyChart() {
   return (
     <div className="w-full xl:w-[49%] xl:mb-0 flex items-center flex-col xl:flex-row">
       <div className="bg-white rounded-lg w-full">
-        <h4 className="border-b p-4 text-2sm font-iranYekanBold">وضعیت خرید</h4>
+        <SectionTitle sectionClass="border-b p-4 text-2sm font-iranYekanBold">وضعیت خرید</SectionTitle>
         <div className="p-4">
           <div className="flex items-center">
             <div className="flex items-center">

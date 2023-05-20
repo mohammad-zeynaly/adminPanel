@@ -1,5 +1,6 @@
 import { totalCustomersData } from "../../allDatas";
 import useNumberPersian from "../../hooks/useNumberPersian";
+import SectionTitle from "../SectionTitle/SectionTitle"
 
 function TotalCustomersChart() {
 
@@ -10,9 +11,9 @@ function TotalCustomersChart() {
           key={chartData.id}
           className={`bg-white rounded-lg w-full mb-5 xl:w-[49%] xl:mb-0 ${chartData.classBetween}`}
         >
-          <h4 className="border-b p-4 text-2sm font-iranYekanBold">
+          <SectionTitle sectionClass="border-b p-4 text-2sm font-iranYekanBold">
             {chartData.title}
-          </h4>
+          </SectionTitle>
           <div className="p-4 flex flex-col items-center">
             {chartData.chart}
             <h6

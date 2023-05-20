@@ -9,6 +9,7 @@ import {
   Line,
 } from "recharts";
 import { devicesStatisticsChartData } from "../../allDatas";
+import SectionTitle from "../SectionTitle/SectionTitle"
 
 function DevicesStatisticsChart() {
   const getTooltipLabel = (value, name) => {
@@ -24,7 +25,7 @@ function DevicesStatisticsChart() {
   return (
     <section className="mt-5 sm:mt-8">
       <div className="bg-white rounded-lg">
-        <h5 className="p-4 border-b">آمار دستگاه ها</h5>
+        <SectionTitle sectionClass="p-4 border-b">آمار دستگاه ها</SectionTitle>
         <div className="p-4">
           <div className="flex items-center justify-around my-5">
             <div className="flex items-center ">
