@@ -1400,6 +1400,8 @@ const visitorsBrowserItems = [
 
 //////////////////////////////// data page wesite user Profile Information  ////////////////////////////////
 
+
+// data user Profile Information
 const userProfileInformation = [
   { id: 1, informationKey: "نام", informationValue: "محمد" },
   { id: 2, informationKey: "نام خانوادگی", informationValue: "زینالی" },
@@ -1415,6 +1417,7 @@ const userProfileInformation = [
 ];
 
 
+// data user Profile Skills 
 const userProfileSkillsData = [
   { id: 1, skill: "HTML5", progressSkill: 95, colorProgress: "bg-[#ffb822]" },
   { id: 2, skill: "css3", progressSkill: 95, colorProgress: "bg-[#2862E9]" },
@@ -1451,6 +1454,7 @@ const userProfileSkillsData = [
   },
 ];
 
+
 export {
   accessItems,
   summaryItems,
@@ -1474,4 +1478,5 @@ export {
   totalViewsItems,
   visitorsBrowserItems,
   userProfileInformation,
+  userProfileSkillsData,
 };

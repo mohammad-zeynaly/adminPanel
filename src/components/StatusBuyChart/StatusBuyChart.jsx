@@ -10,21 +10,17 @@ import {
 import useNumberPersian from "../../hooks/useNumberPersian";
 import CircleIcon from "../CircleIcon/CircleIcon";
 import { statusBuyChartData } from "../../data/allDatas";
-import SectionTitle from "../SectionTitle/SectionTitle"
+import SectionTitle from "../SectionTitle/SectionTitle";
+import changeTooltipChart from "../../functions/changeTooltipChart";
 
 function StatusBuyChart() {
-  const getLabel = (value, name) => {
-    if (name === "success") {
-      return `موفقیت: ${value}`;
-    } else {
-      return `بازگشت: ${value}`;
-    }
-  };
 
   return (
     <div className="w-full xl:w-[49%] xl:mb-0 flex items-center flex-col xl:flex-row">
       <div className="bg-white rounded-lg w-full">
-        <SectionTitle sectionClass="border-b p-4 text-2sm font-iranYekanBold">وضعیت خرید</SectionTitle>
+        <SectionTitle sectionClass="border-b p-4 text-2sm font-iranYekanBold">
+          وضعیت خرید
+        </SectionTitle>
         <div className="p-4">
           <div className="flex items-center">
             <div className="flex items-center">
@@ -37,29 +33,29 @@ function StatusBuyChart() {
             </div>
           </div>
 
-          <div
-            id="chart"
-            className="my-4 flex justify-center w-full status-chart"
-          >
+          <div id="chart" className="my-4 flex justify-center w-full status-chart">
             <ResponsiveContainer width="100%" height={250}>
               <LineChart
                 data={statusBuyChartData}
                 width="100%"
                 height={250}
                 style={{ direction: "ltr" }}
-                className="translate-x-[-7%] sm:translate-x-[-4%] translate-y-[0%] chart__status-buy"
-              >
+                className="translate-x-[-7%] sm:translate-x-[-4%] translate-y-[0%] chart__status-buy">
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" hide />
                 <YAxis />
-                <Tooltip formatter={(value, name) => [getLabel(value, name)]} />
+                <Tooltip
+                  formatter={(value, name) => [
+                    changeTooltipChart(value,name,"موفقیت","بازگشت","","success"),
+                  ]}
+                />
 
                 <Line
                   type="monotone"
                   dataKey="success"
                   stroke="#0abb87"
                   strokeDasharray="5 5"
-                  label={({ value }) => getLabel(value, "success")}
+                  label={({ value }) => changeTooltipChart(value, "success")}
                 />
                 <Line
                   type="monotone"
@@ -67,7 +63,7 @@ function StatusBuyChart() {
                   stroke="#e04b4b"
                   activeDot={{ r: 8 }}
                   strokeDasharray="5 5"
-                  label={({ value }) => getLabel(value, "back")}
+                  label={({ value }) => changeTooltipChart(value, "back")}
                 />
               </LineChart>
             </ResponsiveContainer>
@@ -93,6 +89,7 @@ function StatusBuyChart() {
       </div>
     </div>
   );
+  
 }
 
 export default StatusBuyChart;

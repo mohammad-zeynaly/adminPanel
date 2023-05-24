@@ -7,17 +7,12 @@ import {
   CartesianGrid,
   ResponsiveContainer,
 } from "recharts";
-import {regionalSalesChartData} from "../../data/allDatas"
+import { regionalSalesChartData } from "../../data/allDatas";
 import useNumberPersian from "../../hooks/useNumberPersian";
-import SectionTitle from "../SectionTitle/SectionTitle"
-
+import SectionTitle from "../SectionTitle/SectionTitle";
+import changeTooltipChart from "../../functions/changeTooltipChart";
 
 function RegionalSalesChart() {
-  const getLabel = (value, name) => {
-    if (name === "population") {
-      return ` جمعیت: ${value} میلیون`;
-    }
-  };
 
   return (
     <div className="w-full xl:w-[49%]">
@@ -36,7 +31,11 @@ function RegionalSalesChart() {
 
               <XAxis type="number" hide />
               <YAxis type="category" dataKey="name" />
-              <Tooltip formatter={(value, name) => [getLabel(value, name)]} />
+              <Tooltip
+                formatter={(value, name) => [
+                  changeTooltipChart(value,name,"جمعیت","","","population"),
+                ]}
+              />
 
               <Bar background dataKey="population" fill="#1B35FE" />
             </BarChart>

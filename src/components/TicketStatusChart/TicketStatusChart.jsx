@@ -8,19 +8,11 @@ import {
   Bar,
 } from "recharts";
 import { ticketStatusChartData } from "../../data/allDatas";
-import SectionTitle from "../SectionTitle/SectionTitle"
+import SectionTitle from "../SectionTitle/SectionTitle";
 import CircleIcon from "../CircleIcon/CircleIcon";
+import changeTooltipChart from "../../functions/changeTooltipChart";
 
 function TicketStatusChart() {
-  const getLabel = (value, name) => {
-    if (name === "newTicket") {
-      return ` تیکت های جدید: ${value}`;
-    } else if (name === "solvedTicket") {
-      return `تیکت های حل شده: ${value}`;
-    } else {
-      return `تیکت های در انتظار: ${value}`;
-    }
-  };
 
   return (
     <section className="mt-5 mb-5 sm:mt-8 sm:mb-8">
@@ -55,24 +47,30 @@ function TicketStatusChart() {
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
               <YAxis />
-              <Tooltip formatter={(value, name) => [getLabel(value, name)]} />
+              <Tooltip
+                formatter={(value, name) => [
+                  changeTooltipChart(value,name,"تیکت های جدید","تیکت های حل شده","تیکت های در انتظار","newTicket","solvedTicket"),
+                ]}
+              />
               <Bar
                 dataKey="newTicket"
                 stackId="a"
                 fill="#BAC2FF"
-                label={({ value }) => getLabel(value, "newTicket")}
+                label={({ value }) => changeTooltipChart(value, "newTicket")}
               />
               <Bar
                 dataKey="solvedTicket"
                 stackId="a"
                 fill="#B2E8D8"
-                label={({ value }) => getLabel(value, "solvedTicket")}
+                label={({ value }) => changeTooltipChart(value, "solvedTicket")}
               />
               <Bar
                 dataKey="pendingTicket"
                 stackId="a"
                 fill="#EDA5A5"
-                label={({ value }) => getLabel(value, "pendingTicket")}
+                label={({ value }) =>
+                  changeTooltipChart(value, "pendingTicket")
+                }
               />
             </BarChart>
           </ResponsiveContainer>

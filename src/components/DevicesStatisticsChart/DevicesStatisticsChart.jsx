@@ -9,19 +9,10 @@ import {
   Line,
 } from "recharts";
 import { devicesStatisticsChartData } from "../../data/allDatas";
-import SectionTitle from "../SectionTitle/SectionTitle"
+import SectionTitle from "../SectionTitle/SectionTitle";
+import changeTooltipChart from "../../functions/changeTooltipChart";
 
 function DevicesStatisticsChart() {
-  const getTooltipLabel = (value, name) => {
-    if (name === "mobile") {
-      return ` موبایل: ${value}`;
-    } else if (name === "desktop") {
-      return `دسکتاپ: ${value}`;
-    } else {
-      return `سایر: ${value}`;
-    }
-  };
-
   return (
     <section className="mt-5 sm:mt-8">
       <div className="bg-white rounded-lg">
@@ -52,24 +43,26 @@ function DevicesStatisticsChart() {
                 <XAxis dataKey="desktop" />
                 <YAxis hide />
                 <Tooltip
-                  formatter={(value, name) => [getTooltipLabel(value, name)]}
+                  formatter={(value, name) => [
+                    changeTooltipChart(value,name,"موبایل","دسکتاپ","سایر","mobile","desktop"),
+                  ]}
                 />
                 <Line
-                  label={({ value }) => getTooltipLabel(value, "mobile")}
+                  label={({ value }) => changeTooltipChart(value, "mobile")}
                   type="monotone"
                   dataKey="mobile"
                   stroke="#5867DD"
                   strokeWidth={2}
                 />
                 <Line
-                  label={({ value }) => getTooltipLabel(value, "desktop")}
+                  label={({ value }) => changeTooltipChart(value, "desktop")}
                   type="monotone"
                   dataKey="desktop"
                   stroke="#0abb87"
                   strokeWidth={2}
                 />
                 <Line
-                  label={({ value }) => getTooltipLabel(value, "other")}
+                  label={({ value }) => changeTooltipChart(value, "other")}
                   type="monotone"
                   dataKey="other"
                   stroke="#FFB822"

@@ -9,16 +9,10 @@ import {
 } from "recharts";
 import { reportChartData } from "../../data/allDatas";
 import useNumberPersian from "../../hooks/useNumberPersian";
-import SectionTitle from "../SectionTitle/SectionTitle"
+import SectionTitle from "../SectionTitle/SectionTitle";
+import changeTooltipChart from "../../functions/changeTooltipChart";
 
 function Reports() {
-  const getTooltipLabel = (value, name) => {
-    if (name === "sale") {
-      return `مجموع فروش: ${value}`;
-    } else {
-      return `میانگین: ${value}`;
-    }
-  };
 
   return (
     <div className="w-full mb-5 xl:w-[49%] xl:mb-0">
@@ -51,19 +45,21 @@ function Reports() {
               <CartesianGrid strokeDasharray="3 3" vertical={false} />
               <XAxis dataKey="name" />
               <YAxis className="mr-8" />
-              <Tooltip formatter={(value, name) => [getTooltipLabel(value, name)]} />
+              <Tooltip
+                formatter={(value, name) => [
+                  changeTooltipChart(value,name,"مجموع فروش","میانگین","","sale"),
+                ]}
+              />
 
               <Bar
                 dataKey="sale"
                 fill="#55A6EB"
-                label={({ value }) => getTooltipLabel(value, "sale")}
-                
+                label={({ value }) => changeTooltipChart(value, "sale")}
               />
               <Bar
                 dataKey="average"
                 fill="#5867DD"
-                label={({ value }) => getTooltipLabel(value, "average")}
-                
+                label={({ value }) => changeTooltipChart(value, "average")}
               />
             </BarChart>
           </ResponsiveContainer>
@@ -71,6 +67,7 @@ function Reports() {
       </div>
     </div>
   );
+  
 }
 
 export default Reports;
