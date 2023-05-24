@@ -1,4 +1,4 @@
-import { totalCustomersData } from "../../allDatas";
+import { totalCustomersData } from "../../data/allDatas";
 import useNumberPersian from "../../hooks/useNumberPersian";
 import SectionTitle from "../SectionTitle/SectionTitle"
 

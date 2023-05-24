@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { AdminPanelContext } from "../../context/AdminPanelContext"
 import { NavLink } from "react-router-dom";
 import SummaryItem from "./SummaryItem"
-import { summaryItems } from "../../allDatas";
+import { summaryItems } from "../../data/allDatas";
 
 function Sidebar() {
 

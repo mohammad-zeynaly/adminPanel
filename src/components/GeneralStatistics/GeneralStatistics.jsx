@@ -1,4 +1,4 @@
-import { generalStatisticsData } from "../../allDatas"
+import { generalStatisticsData } from "../../data/allDatas"
 import useNumberPersian from "../../hooks/useNumberPersian";
 
 

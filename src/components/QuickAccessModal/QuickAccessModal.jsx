@@ -1,4 +1,4 @@
-import { accessItems } from "../../allDatas";
+import { accessItems } from "../../data/allDatas";
 
 function QuickAccessModal() {
   return (

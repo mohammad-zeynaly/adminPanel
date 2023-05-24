@@ -1393,6 +1393,64 @@ const visitorsBrowserItems = [
   },
 ];
 
+
+
+
+/* *************************************************************************************************************** */
+
+//////////////////////////////// data page wesite user Profile Information  ////////////////////////////////
+
+const userProfileInformation = [
+  { id: 1, informationKey: "نام", informationValue: "محمد" },
+  { id: 2, informationKey: "نام خانوادگی", informationValue: "زینالی" },
+  { id: 3, informationKey: "سن", informationValue: 19 },
+  { id: 4, informationKey: "شغل", informationValue: "توسعه دهنده Front-end" },
+  { id: 5, informationKey: "شهر", informationValue: "تبریز" },
+  { id: 6, informationKey: "تلفن", informationValue: "09911406098" },
+  {
+    id: 7,
+    informationKey: "ایمیل",
+    informationValue: "mhmdzynaly977@gmail.com",
+  },
+];
+
+
+const userProfileSkillsData = [
+  { id: 1, skill: "HTML5", progressSkill: 95, colorProgress: "bg-[#ffb822]" },
+  { id: 2, skill: "css3", progressSkill: 95, colorProgress: "bg-[#2862E9]" },
+  { id: 3, skill: "sass", progressSkill: 90, colorProgress: "bg-[#C4588D]" },
+  {
+    id: 4,
+    skill: "Bootstrap",
+    progressSkill: 90,
+    colorProgress: "bg-[#6F11EF]",
+  },
+  {
+    id: 5,
+    skill: "TailwindCSS",
+    progressSkill: 90,
+    colorProgress: "bg-[#38BDF8]",
+  },
+  {
+    id: 6,
+    skill: "JavaScript",
+    progressSkill: 75,
+    colorProgress: "bg-[#E8D44D]",
+  },
+  {
+    id: 7,
+    skill: "React.js",
+    progressSkill: 80,
+    colorProgress: "bg-[#00D1F7]",
+  },
+  {
+    id: 8,
+    skill: "Redux",
+    progressSkill: 80,
+    colorProgress: "bg-[#7248B6]",
+  },
+];
+
 export {
   accessItems,
   summaryItems,
@@ -1415,4 +1473,5 @@ export {
   devicesStatisticsChartData,
   totalViewsItems,
   visitorsBrowserItems,
+  userProfileInformation,
 };

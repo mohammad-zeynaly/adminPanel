@@ -1,7 +1,7 @@
 import TableTemplate from "../TableTemplate/TableTemplate";
 import { TableHead, TableRow, TableCell, TableBody } from "@mui/material";
 import ProgressBar from "../ProgressBar/ProgressBar";
-import { totalViewsItems } from "../../allDatas";
+import { totalViewsItems } from "../../data/allDatas";
 import SectionTitle from "../SectionTitle/SectionTitle"
 
 function TotalViewsTable() {

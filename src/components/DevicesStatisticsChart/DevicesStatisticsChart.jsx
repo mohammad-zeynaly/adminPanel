@@ -8,7 +8,7 @@ import {
   Tooltip,
   Line,
 } from "recharts";
-import { devicesStatisticsChartData } from "../../allDatas";
+import { devicesStatisticsChartData } from "../../data/allDatas";
 import SectionTitle from "../SectionTitle/SectionTitle"
 
 function DevicesStatisticsChart() {

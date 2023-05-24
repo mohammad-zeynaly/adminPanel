@@ -7,7 +7,7 @@ import {
   Tooltip,
   Bar,
 } from "recharts";
-import { ticketStatusChartData } from "../../allDatas";
+import { ticketStatusChartData } from "../../data/allDatas";
 import SectionTitle from "../SectionTitle/SectionTitle"
 import CircleIcon from "../CircleIcon/CircleIcon";
 

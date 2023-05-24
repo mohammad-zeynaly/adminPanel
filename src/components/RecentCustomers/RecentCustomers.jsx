@@ -1,6 +1,6 @@
 import TableTemplate from "../TableTemplate/TableTemplate";
 import { TableHead, TableRow, TableCell, TableBody } from "@mui/material";
-import { recentCustomersData } from "../../allDatas";
+import { recentCustomersData } from "../../data/allDatas";
 import SectionTitle from "../SectionTitle/SectionTitle"
 
 function RecentCustomers() {

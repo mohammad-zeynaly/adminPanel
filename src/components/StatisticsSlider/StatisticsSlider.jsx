@@ -1,6 +1,6 @@
 import SwiperCore, { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { StatisticsSliderItems } from "../../allDatas";
+import { StatisticsSliderItems } from "../../data/allDatas";
 import StatisticsSliderBox from "./StatisticsSliderBox";
 SwiperCore.use([Autoplay]);
 import "swiper/css";

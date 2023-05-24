@@ -1,7 +1,7 @@
 import TableTemplate from "../TableTemplate/TableTemplate";
 import { TableHead, TableRow, TableCell, TableBody } from "@mui/material";
 import ProgressBar from "../ProgressBar/ProgressBar";
-import { visitorsBrowserItems } from "../../allDatas";
+import { visitorsBrowserItems } from "../../data/allDatas";
 import useNumberPersian from "../../hooks/useNumberPersian";
 import SectionTitle from "../SectionTitle/SectionTitle"
 

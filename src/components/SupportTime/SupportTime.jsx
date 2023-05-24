@@ -1,4 +1,4 @@
-import { supportTimeBoxes } from "../../allDatas";
+import { supportTimeBoxes } from "../../data/allDatas";
 
 function SupportTime() {
   

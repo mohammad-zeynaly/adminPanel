@@ -1,5 +1,5 @@
 import TemplateModal from "../TemplateModal/TemplateModal";
-import { messageItems } from "../../allDatas";
+import { messageItems } from "../../data/allDatas";
 
 function MessagesModal() {
   return (

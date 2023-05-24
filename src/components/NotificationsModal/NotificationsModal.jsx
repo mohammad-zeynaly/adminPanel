@@ -1,5 +1,5 @@
 import TemplateModal from "../TemplateModal/TemplateModal";
-import { notificationItems } from "../../allDatas";
+import { notificationItems } from "../../data/allDatas";
 
 function NotificationsModal() {
   return (

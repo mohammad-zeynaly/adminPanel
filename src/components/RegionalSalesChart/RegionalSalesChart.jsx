@@ -7,7 +7,7 @@ import {
   CartesianGrid,
   ResponsiveContainer,
 } from "recharts";
-import {regionalSalesChartData} from "../../allDatas"
+import {regionalSalesChartData} from "../../data/allDatas"
 import useNumberPersian from "../../hooks/useNumberPersian";
 import SectionTitle from "../SectionTitle/SectionTitle"
 

@@ -9,7 +9,7 @@ import {
 } from "recharts";
 import useNumberPersian from "../../hooks/useNumberPersian";
 import CircleIcon from "../CircleIcon/CircleIcon";
-import { statusBuyChartData } from "../../allDatas";
+import { statusBuyChartData } from "../../data/allDatas";
 import SectionTitle from "../SectionTitle/SectionTitle"
 
 function StatusBuyChart() {

@@ -1,8 +1,8 @@
 import TableTemplate from "../TableTemplate/TableTemplate";
 import useNumberPersian from "../../hooks/useNumberPersian";
-import { incomeItems } from "../../allDatas";
+import { incomeItems } from "../../data/allDatas";
 import { TableHead, TableRow, TableCell, TableBody } from "@mui/material";
-import { allIncomeItemData } from "../../allDatas";
+import { allIncomeItemData } from "../../data/allDatas";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 function RecentIncome() {

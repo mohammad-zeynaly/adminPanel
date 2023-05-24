@@ -1,5 +1,5 @@
 import ProgressBar from "../ProgressBar/ProgressBar";
-import { ticketMessagesItems } from "../../allDatas";
+import { ticketMessagesItems } from "../../data/allDatas";
 
 function TicketMessages() {
   return (

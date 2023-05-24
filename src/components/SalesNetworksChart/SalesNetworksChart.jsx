@@ -1,5 +1,5 @@
 import ProgressBar from "../ProgressBar/ProgressBar";
-import { averageSale } from "../../allDatas";
+import { averageSale } from "../../data/allDatas";
 import SectionTitle from "../SectionTitle/SectionTitle"
 
 function SalesNetworksChart() {

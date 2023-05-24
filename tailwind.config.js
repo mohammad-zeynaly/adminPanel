@@ -15,7 +15,7 @@ export default {
         padding: "1rem",
       },
       colors:{
-        primary: "#5867DD",
+        primary: "#5867DD", 
         secondary: "#0abb87",
         third: "#e04b4b",
       },

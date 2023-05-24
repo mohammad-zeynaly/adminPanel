@@ -7,7 +7,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { reportChartData } from "../../allDatas";
+import { reportChartData } from "../../data/allDatas";
 import useNumberPersian from "../../hooks/useNumberPersian";
 import SectionTitle from "../SectionTitle/SectionTitle"
 

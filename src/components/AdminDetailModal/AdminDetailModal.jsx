@@ -1,5 +1,5 @@
 import { Avatar } from "@mui/material";
-import { socialItems } from "../../allDatas";
+import { socialItems } from "../../data/allDatas";
 
 function AdminDetailModal() {
   return (

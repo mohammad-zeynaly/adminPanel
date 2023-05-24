@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useRoutes } from "react-router-dom";
 import { AdminPanelContext } from "./context/AdminPanelContext";
-import routes from "./routes";
+import routes from "./routes/routes";
 import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
