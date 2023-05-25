@@ -1,57 +1,46 @@
-import { useState, useEffect, useReducer } from "react";
+import { useState, useEffect } from "react";
 import { useRoutes } from "react-router-dom";
 import { AdminPanelContext } from "./context/AdminPanelContext";
-import { initialState,reducer } from "./reducer/reducer"
 import routes from "./routes/routes";
 import Sidebar from "./components/Sidebar/Sidebar";
 import supabase from "./config/supabaseClient";
-
 
 function App() {
   // all routes
   const routers = useRoutes(routes);
 
-  // states
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [isShowQuickAccessModal, setIsShowQuickAccessModal] = useState(false);
+  const [isShowMessageModal, setIsShowMessageModal] = useState(false);
+  const [isShowNotificationsModal, setIsShowNotificationsModal] = useState(false);
+  const [isShowSidebar, setIsShowSidebar] = useState(false);
+  const [isShowMenuModals, setIsShowMenuModals] = useState(false);
+  const [isShowAdminDetailModal, setIsShowAdminDetailModal] = useState(false);
+  const [loadingTime, setLoadingTime] = useState(true);
   const [allData, setAllData] = useState([]);
 
-  const {
-    isShowQuickAccessModal,
-    isShowMessageModal,
-    isShowNotificationsModal,
-    isShowSidebar,
-    isShowMenuModals,
-    isShowAdminDetailModal,
-    loadingTime,
-  } = state;
-
-
-  const closeAllModal = () => {
-    dispatch({ type: "CLOSE_ALL_MODAL" });
-  };
-
-  const setModalStatus = (modalName, status) => {
-    dispatch({ type: "SET_MODAL_STATUS", payload: { modalName, status } });
-  };
-
- 
   useEffect(() => {
-
     const getRequest = async () => {
       const { data, error } = await supabase.from("allPanelData").select();
-  
+
       if (data) {
-
         setAllData([...data]);
-        dispatch({ type: "FINISH_LOADING_TIME" });
-
+        setLoadingTime(false);
       } else {
         console.log("error => ", error);
       }
     };
-    
+
     getRequest();
   }, []);
+
+  const closeAllModal = () => {
+    setIsShowQuickAccessModal(false);
+    setIsShowMessageModal(false);
+    setIsShowNotificationsModal(false);
+    setIsShowSidebar(false);
+    setIsShowMenuModals(false);
+    setIsShowAdminDetailModal(false);
+  };
 
   return (
     <AdminPanelContext.Provider
@@ -62,18 +51,20 @@ function App() {
         isShowSidebar,
         isShowMenuModals,
         isShowAdminDetailModal,
-        setModalStatus,
         loadingTime,
-        closeAllModal,
-        dispatch,
-        state,
-        setAllData,
         allData,
+        setAllData,
+        setIsShowQuickAccessModal,
+        setIsShowMessageModal,
+        setIsShowNotificationsModal,
+        setIsShowSidebar,
+        setIsShowMenuModals,
+        setIsShowAdminDetailModal,
       }}
     >
       <div
         onClick={closeAllModal}
-        className="font-iranYekanMedium bg-[#E7EBEE]"
+        className="font-iranYekanMedium bg-[#E7EBEE] overflow-x-hidden"
       >
         <div className={isShowSidebar ? "overlay" : ""}></div>
         <div className="container">

@@ -15,8 +15,8 @@ function Topbar({ BreadcrumbTitle, BreadcrumbLink }) {
     isShowNotificationsModal,
     isShowMenuModals,
     isShowAdminDetailModal,
-    dispatch,
-    state,
+    setIsShowSidebar,
+    setIsShowMenuModals,
   } = useContext(AdminPanelContext);
 
   return (
@@ -53,16 +53,11 @@ function Topbar({ BreadcrumbTitle, BreadcrumbLink }) {
         <div className="" id="topbar-left">
           <div className="lg:hidden mobile-btn">
             <button
-              id="menuBtn"
+              id="sidebar"
               onClick={(event) => {
                 event.stopPropagation();
-                dispatch({
-                  type: "SET_MODAL_STATUS",
-                  payload: {
-                    modalName: "isShowSidebar",
-                    status: !state.isShowSidebar,
-                  },
-                });
+
+                setIsShowSidebar((prevShow) => !prevShow);
               }}
               className="ml-4 bg-white rounded-lg px-3 py-2"
             >
@@ -85,13 +80,7 @@ function Topbar({ BreadcrumbTitle, BreadcrumbLink }) {
               id="menuBtn"
               onClick={(event) => {
                 event.stopPropagation();
-                dispatch({
-                  type: "SET_MODAL_STATUS",
-                  payload: {
-                    modalName: "isShowMenuModals",
-                    status: !state.isShowMenuModals,
-                  },
-                });
+                setIsShowMenuModals((prevShow) => !prevShow);
               }}
               className="bg-white rounded-lg px-3 py-2"
             >
