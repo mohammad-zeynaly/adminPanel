@@ -1,9 +1,9 @@
-import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import useFilteredData from "../../hooks/useFilteredData";
 import ProgressBar from "../ProgressBar/ProgressBar";
 
 function ProfileSkills() {
 
-  const userProfileSkillsData = useFetchAndFilteredData("userProfileSkillsData")
+  const userProfileSkillsData = useFilteredData("userProfileSkillsData")
 
   return (
     <div className="mt-5 sm:mt-8 mb-5 bg-white p-4 rounded-lg w-full ">

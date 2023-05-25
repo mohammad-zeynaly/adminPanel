@@ -9,13 +9,12 @@ import AdminDetailModal from "../AdminDetailModal/AdminDetailModal";
 function ModalsManages() {
   const {
     isShowQuickAccessModal,
-    setIsShowQuickAccessModal,
     isShowMessageModal,
-    setIsShowMessageModal,
     isShowNotificationsModal,
-    setIsShowNotificationsModal,
     isShowAdminDetailModal,
-    setIsShowAdminDetailModal,
+    dispatch,
+    state,
+    closeAllModal,
   } = useContext(AdminPanelContext);
   return (
     <>
@@ -24,10 +23,14 @@ function ModalsManages() {
           <button
             onClick={(event) => {
               event.stopPropagation();
-              setIsShowMessageModal(false);
-              setIsShowNotificationsModal(false);
-              setIsShowAdminDetailModal(false);
-              setIsShowQuickAccessModal((prevAccess) => !prevAccess);
+              closeAllModal();
+              dispatch({
+                type: "SET_MODAL_STATUS",
+                payload: {
+                  modalName: "isShowQuickAccessModal",
+                  status: !state.isShowQuickAccessModal,
+                },
+              });
             }}
             className="bg-white rounded-lg text-[#828282] px-3 py-2 hover:text-primary"
           >
@@ -52,10 +55,14 @@ function ModalsManages() {
           <button
             onClick={(event) => {
               event.stopPropagation();
-              setIsShowQuickAccessModal(false);
-              setIsShowNotificationsModal(false);
-              setIsShowAdminDetailModal(false);
-              setIsShowMessageModal((prevMessageShow) => !prevMessageShow);
+              closeAllModal();
+              dispatch({
+                type: "SET_MODAL_STATUS",
+                payload: {
+                  modalName: "isShowMessageModal",
+                  status: !state.isShowMessageModal,
+                },
+              });
             }}
             className="bg-white rounded-lg text-[#828282] px-3 py-2 hover:text-primary relative"
           >
@@ -81,12 +88,14 @@ function ModalsManages() {
           <button
             onClick={(event) => {
               event.stopPropagation();
-              setIsShowQuickAccessModal(false);
-              setIsShowMessageModal(false);
-              setIsShowAdminDetailModal(false);
-              setIsShowNotificationsModal(
-                (prevNotification) => !prevNotification
-              );
+              closeAllModal();
+              dispatch({
+                type: "SET_MODAL_STATUS",
+                payload: {
+                  modalName: "isShowNotificationsModal",
+                  status: !state.isShowNotificationsModal,
+                },
+              });
             }}
             className="bg-white rounded-lg text-[#828282] px-3 py-2 hover:text-primary"
           >
@@ -112,14 +121,19 @@ function ModalsManages() {
         </div>
       </div>
 
-      <div id="profile"
+      <div
+        id="profile"
         className="relative"
         onClick={(event) => {
           event.stopPropagation();
-          setIsShowQuickAccessModal(false);
-          setIsShowMessageModal(false);
-          setIsShowNotificationsModal(false);
-          setIsShowAdminDetailModal((prevDetailModal) => !prevDetailModal);
+          closeAllModal();
+          dispatch({
+            type: "SET_MODAL_STATUS",
+            payload: {
+              modalName: "isShowAdminDetailModal",
+              status: !state.isShowAdminDetailModal,
+            },
+          });
         }}
       >
         <Badge

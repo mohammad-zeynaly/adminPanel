@@ -1,8 +1,8 @@
 import ProgressBar from "../ProgressBar/ProgressBar";
-import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import useFilteredData from "../../hooks/useFilteredData";
 
 function TicketMessages() {
-  const ticketMessagesItems = useFetchAndFilteredData("ticketMessagesItems");
+  const ticketMessagesItems = useFilteredData("ticketMessagesItems");
 
   return (
     <>

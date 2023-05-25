@@ -1,4 +1,4 @@
-import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import useFilteredData from "../../hooks/useFilteredData";
 import TableTemplate from "../TableTemplate/TableTemplate";
 import { TableHead, TableRow, TableCell, TableBody } from "@mui/material";
 import ProgressBar from "../ProgressBar/ProgressBar";
@@ -6,7 +6,7 @@ import SectionTitle from "../SectionTitle/SectionTitle"
 
 function TotalViewsTable() {
 
-  const totalViewsItems = useFetchAndFilteredData("totalViewsItems")
+  const totalViewsItems = useFilteredData("totalViewsItems")
 
   return (
     <div className="w-full mb-5 xl:mb-0 xl:w-[49%]">

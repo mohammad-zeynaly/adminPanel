@@ -1,10 +1,10 @@
-import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import useFilteredData from "../../hooks/useFilteredData";
 import ProgressBar from "../ProgressBar/ProgressBar";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 function SalesNetworksChart() {
   
-  const averageSale = useFetchAndFilteredData("averageSale");
+  const averageSale = useFilteredData("averageSale");
 
   return (
     <div className="w-full mb-5 xl:w-[49%] xl:mb-0 flex items-center flex-col xl:flex-row">

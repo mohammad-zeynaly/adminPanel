@@ -7,7 +7,7 @@ import {
   Tooltip,
   Line,
 } from "recharts";
-import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import useFilteredData from "../../hooks/useFilteredData";
 import useNumberPersian from "../../hooks/useNumberPersian";
 import CircleIcon from "../CircleIcon/CircleIcon";
 import SectionTitle from "../SectionTitle/SectionTitle";
@@ -15,7 +15,7 @@ import changeTooltipChart from "../../functions/changeTooltipChart";
 
 function StatusBuyChart() {
 
-  const statusBuyChartData = useFetchAndFilteredData("statusBuyChartData")
+  const statusBuyChartData = useFilteredData("statusBuyChartData")
 
   return (
     <div className="w-full xl:w-[49%] xl:mb-0 flex items-center flex-col xl:flex-row">

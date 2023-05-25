@@ -1,4 +1,4 @@
-import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import useFilteredData from "../../hooks/useFilteredData";
 import CircleIcon from "../CircleIcon/CircleIcon";
 import {
   ResponsiveContainer,
@@ -14,7 +14,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 
 function DevicesStatisticsChart() {
 
-  const devicesStatisticsChartData = useFetchAndFilteredData("devicesStatisticsChartData")
+  const devicesStatisticsChartData = useFilteredData("devicesStatisticsChartData")
 
   return (
     <section className="mt-5 sm:mt-8">

@@ -1,10 +1,10 @@
-import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import useFilteredData from "../../hooks/useFilteredData";
 import useNumberPersian from "../../hooks/useNumberPersian";
 import convertToSvgHtml from "../../functions/convertToSvgHtml";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 function TotalCustomersChart() {
-  const totalCustomersData = useFetchAndFilteredData("totalCustomersData");
+  const totalCustomersData = useFilteredData("totalCustomersData");
 
   return (
     <div className="w-full xl:w-[49%] xl:mb-0 flex items-center flex-col xl:flex-row">

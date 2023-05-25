@@ -1,13 +1,13 @@
 import { useContext } from "react";
 import { AdminPanelContext } from "../../context/AdminPanelContext";
-import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import useFilteredData from "../../hooks/useFilteredData";
 import { NavLink } from "react-router-dom";
 import SummaryItem from "./SummaryItem";
 
 function Sidebar() {
   const { isShowSidebar } = useContext(AdminPanelContext);
 
-  const SummaryItems = useFetchAndFilteredData("summaryItems");
+  const SummaryItems = useFilteredData("summaryItems");
 
   return (
     <>

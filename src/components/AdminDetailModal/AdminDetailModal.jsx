@@ -1,10 +1,10 @@
-import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import useFilteredData from "../../hooks/useFilteredData";
 import convertToSvgHtml from "../../functions/convertToSvgHtml";
 import { Avatar } from "@mui/material";
 
 function AdminDetailModal() {
 
-  const socialItems = useFetchAndFilteredData("socialItems")
+  const socialItems = useFilteredData("socialItems")
 
   return (
     <div

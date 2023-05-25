@@ -1,9 +1,9 @@
-import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import useFilteredData from "../../hooks/useFilteredData";
 import convertToSvgHtml from "../../functions/convertToSvgHtml";
 
 function QuickAccessModal() {
 
-  const accessItems = useFetchAndFilteredData("accessItems")
+  const accessItems = useFilteredData("accessItems")
 
   return (
     <div onClick={(event) => event.stopPropagation()}

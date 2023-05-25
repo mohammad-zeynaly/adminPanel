@@ -1,9 +1,9 @@
-import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import useFilteredData from "../../hooks/useFilteredData";
 import convertToSvgHtml from "../../functions/convertToSvgHtml";
 import TemplateModal from "../TemplateModal/TemplateModal";
 
 function NotificationsModal() {
-  const notificationItems = useFetchAndFilteredData("notificationItems");
+  const notificationItems = useFilteredData("notificationItems");
 
   return (
     <TemplateModal modalTitle="اعلان ها" modalCaption="2 اعلان خوانده نشده">

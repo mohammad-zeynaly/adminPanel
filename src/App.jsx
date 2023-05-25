@@ -1,46 +1,55 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useReducer } from "react";
 import { useRoutes } from "react-router-dom";
 import { AdminPanelContext } from "./context/AdminPanelContext";
+import { initialState,reducer } from "./reducer/reducer"
 import routes from "./routes/routes";
 import Sidebar from "./components/Sidebar/Sidebar";
 import supabase from "./config/supabaseClient";
 
+
 function App() {
+  // all routes
   const routers = useRoutes(routes);
 
   // states
-  const [isShowQuickAccessModal, setIsShowQuickAccessModal] = useState(false);
-  const [isShowMessageModal, setIsShowMessageModal] = useState(false);
-  const [isShowNotificationsModal, setIsShowNotificationsModal] =
-    useState(false);
-  const [isShowSidebar, setIsShowSidebar] = useState(false);
-  const [isShowMenuModals, setIsShowMenuModals] = useState(false);
-  const [isShowAdminDetailModal, setIsShowAdminDetailModal] = useState(false);
+  const [state, dispatch] = useReducer(reducer, initialState);
   const [allData, setAllData] = useState([]);
-  const [loadingTime, setLoadingTime] = useState(true);
+
+  const {
+    isShowQuickAccessModal,
+    isShowMessageModal,
+    isShowNotificationsModal,
+    isShowSidebar,
+    isShowMenuModals,
+    isShowAdminDetailModal,
+    loadingTime,
+  } = state;
+
 
   const closeAllModal = () => {
-    setIsShowQuickAccessModal(false);
-    setIsShowMessageModal(false);
-    setIsShowNotificationsModal(false);
-    setIsShowSidebar(false);
-    setIsShowMenuModals(false);
-    setIsShowAdminDetailModal(false);
+    dispatch({ type: "CLOSE_ALL_MODAL" });
   };
 
-  const getRequest = async () => {
-    const { data, error } = await supabase.from("allPanelData").select();
-
-    if (data) {
-      console.log("datas", data);
-      setAllData([...data]);
-      setLoadingTime(false)
-    } else {
-      console.log("error => ", error);
-    }
+  const setModalStatus = (modalName, status) => {
+    dispatch({ type: "SET_MODAL_STATUS", payload: { modalName, status } });
   };
 
+ 
   useEffect(() => {
+
+    const getRequest = async () => {
+      const { data, error } = await supabase.from("allPanelData").select();
+  
+      if (data) {
+
+        setAllData([...data]);
+        dispatch({ type: "FINISH_LOADING_TIME" });
+
+      } else {
+        console.log("error => ", error);
+      }
+    };
+    
     getRequest();
   }, []);
 
@@ -48,21 +57,18 @@ function App() {
     <AdminPanelContext.Provider
       value={{
         isShowQuickAccessModal,
-        setIsShowQuickAccessModal,
         isShowMessageModal,
-        setIsShowMessageModal,
         isShowNotificationsModal,
-        setIsShowNotificationsModal,
         isShowSidebar,
-        setIsShowSidebar,
         isShowMenuModals,
-        setIsShowMenuModals,
         isShowAdminDetailModal,
-        setIsShowAdminDetailModal,
+        setModalStatus,
+        loadingTime,
+        closeAllModal,
+        dispatch,
+        state,
         setAllData,
         allData,
-        loadingTime,
-        setLoadingTime,
       }}
     >
       <div

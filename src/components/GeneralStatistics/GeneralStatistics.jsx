@@ -1,9 +1,9 @@
-import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import useFilteredData from "../../hooks/useFilteredData";
 import convertToSvgHtml from "../../functions/convertToSvgHtml";
 import useNumberPersian from "../../hooks/useNumberPersian";
 
 function GeneralStatistics() {
-  const generalStatisticsData = useFetchAndFilteredData("generalStatisticsData");
+  const generalStatisticsData = useFilteredData("generalStatisticsData");
 
   return (
     <section className="mt-5 sm:mt-8">

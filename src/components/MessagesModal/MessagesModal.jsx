@@ -1,9 +1,9 @@
 import TemplateModal from "../TemplateModal/TemplateModal";
-import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import useFilteredData from "../../hooks/useFilteredData";
 
 function MessagesModal() {
 
-  const messageItems = useFetchAndFilteredData("messageItems")
+  const messageItems = useFilteredData("messageItems")
   
   return (
     <TemplateModal modalTitle="پیام ها" modalCaption="1 پیام خوانده نشده">

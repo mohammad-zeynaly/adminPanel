@@ -1,13 +1,13 @@
 import TableTemplate from "../TableTemplate/TableTemplate";
-import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import useFilteredData from "../../hooks/useFilteredData";
 import useNumberPersian from "../../hooks/useNumberPersian";
 import convertToSvgHtml from "../../functions/convertToSvgHtml";
 import { TableHead, TableRow, TableCell, TableBody } from "@mui/material";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 function RecentIncome() {
-  const incomeItems = useFetchAndFilteredData("incomeItems");
-  const allIncomeItemData = useFetchAndFilteredData("allIncomeItemData");
+  const incomeItems = useFilteredData("incomeItems");
+  const allIncomeItemData = useFilteredData("allIncomeItemData");
 
   return (
     <section className="mt-5 sm:mt-8 bg-white rounded-lg p-4">

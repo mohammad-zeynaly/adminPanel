@@ -1,4 +1,4 @@
-import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import useFilteredData from "../../hooks/useFilteredData";
 import useNumberPersian from "../../hooks/useNumberPersian";
 import convertToSvgHtml from "../../functions/convertToSvgHtml";
 import TableTemplate from "../TableTemplate/TableTemplate";
@@ -8,7 +8,7 @@ import SectionTitle from "../SectionTitle/SectionTitle"
 
 function VisitorsBrowsers() {
 
-  const visitorsBrowserItems = useFetchAndFilteredData("visitorsBrowserItems")
+  const visitorsBrowserItems = useFilteredData("visitorsBrowserItems")
 
   return (
     <div className="w-full xl:w-[49%] xl:mr-4">
