@@ -22,6 +22,7 @@
 - recharts
 - Swiper
 - svg icons
+- supabase
 
 ---
 
