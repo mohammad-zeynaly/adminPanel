@@ -1,14 +1,15 @@
----
 # adminPanel/fa page front-end
-<!-- ## [review online](https://nigarshop.netlify.app) -->
+
+## [review online](https://mohammad-zeynali.github.io/adminPanel/)
+
 ---
 
 ## tips
 
 - fully responsive for mobile, tablet, laptop and desktop
 - In this project, the functional component is fully used
-<!-- * All product information and other site information come from supabase database -->
-- This project is being developed
+
+* All data information and other site information come from supabase database
 
 ---
 
