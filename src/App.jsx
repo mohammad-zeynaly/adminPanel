@@ -9,6 +9,7 @@ function App() {
   // all routes
   const routers = useRoutes(routes);
 
+  // states
   const [isShowQuickAccessModal, setIsShowQuickAccessModal] = useState(false);
   const [isShowMessageModal, setIsShowMessageModal] = useState(false);
   const [isShowNotificationsModal, setIsShowNotificationsModal] = useState(false);
