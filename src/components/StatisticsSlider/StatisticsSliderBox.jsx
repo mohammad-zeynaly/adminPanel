@@ -1,4 +1,5 @@
 import ProgressBar from "../ProgressBar/ProgressBar";
+import convertToSvgHtml from "../../functions/convertToSvgHtml";
 
 function StatisticsSliderBox(props) {
   let {
@@ -10,15 +11,14 @@ function StatisticsSliderBox(props) {
     count,
     progressValue,
   } = props;
-
   return (
     <div className="p-5 rounded-lg flex flex-col border file:border-[#dee2e6] ">
       <div className="flex justify-between">
         <div className="flex items-center">
           <div
             className={`${bgColor} w-8 h-8 flex items-center justify-center rounded-full`}
+            dangerouslySetInnerHTML={convertToSvgHtml(icon)}
           >
-            {icon}
           </div>
           <span className="pr-3 text-sm "> {title} </span>
         </div>

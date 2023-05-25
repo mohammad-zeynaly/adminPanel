@@ -1,7 +1,9 @@
 import ProgressBar from "../ProgressBar/ProgressBar";
-import { ticketMessagesItems } from "../../data/allDatas";
+import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
 
 function TicketMessages() {
+  const ticketMessagesItems = useFetchAndFilteredData("ticketMessagesItems");
+
   return (
     <>
       <section className="lg:mt-8">
@@ -9,18 +11,18 @@ function TicketMessages() {
           {ticketMessagesItems.map((ticketItem) => (
             <div key={ticketItem.id} className="bg-white rounded-lg p-4">
               <h5 className="font-iranYekanBold text-xl">
-                {ticketItem.ticketCount}
-                <span className="text-base"> {ticketItem.ticketTitle} </span>
+                {ticketItem.count}
+                <span className="text-base"> {ticketItem.title} </span>
               </h5>
               <ProgressBar
                 progressClass="mt-3"
-                progressValue={ticketItem.progressPercent}
-                progressColorValue={ticketItem.progressColor}
+                progressValue={ticketItem.progressValue}
+                progressColorValue={ticketItem.progressValueColor}
               />
 
               <div className="flex items-center ">
                 <span
-                  className={`${ticketItem.growthColor } text-secondary text-2sm`}
+                  className={`${ticketItem.growthColor} text-secondary text-2sm`}
                 >
                   {ticketItem.growth}%
                 </span>

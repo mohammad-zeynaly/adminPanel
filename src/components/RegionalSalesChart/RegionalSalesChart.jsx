@@ -7,12 +7,14 @@ import {
   CartesianGrid,
   ResponsiveContainer,
 } from "recharts";
-import { regionalSalesChartData } from "../../data/allDatas";
+import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
 import useNumberPersian from "../../hooks/useNumberPersian";
-import SectionTitle from "../SectionTitle/SectionTitle";
 import changeTooltipChart from "../../functions/changeTooltipChart";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 function RegionalSalesChart() {
+
+  const regionalSalesChartData = useFetchAndFilteredData("regionalSalesChartData")
 
   return (
     <div className="w-full xl:w-[49%]">

@@ -1,7 +1,8 @@
-import { supportTimeBoxes } from "../../data/allDatas";
+import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData"
 
 function SupportTime() {
-  
+
+  const supportTimeBoxes = useFetchAndFilteredData("supportTimeBoxes")
 
   return (
     <section className="mt-5 sm:mt-8">

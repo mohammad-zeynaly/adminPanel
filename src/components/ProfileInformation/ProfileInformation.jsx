@@ -1,6 +1,9 @@
-import { userProfileInformation } from "../../data/allDatas";
+import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
 
 function ProfileInformation() {
+
+  const userProfileInformation = useFetchAndFilteredData("userProfileInformation")
+
   return (
     <section className="mt-5 sm:mt-8 bg-white p-4 rounded-lg w-full ">
       <h4 className="text-lg text-center"> اطلاعات </h4>

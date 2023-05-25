@@ -1,11 +1,15 @@
+import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import useNumberPersian from "../../hooks/useNumberPersian";
+import convertToSvgHtml from "../../functions/convertToSvgHtml";
 import TableTemplate from "../TableTemplate/TableTemplate";
 import { TableHead, TableRow, TableCell, TableBody } from "@mui/material";
 import ProgressBar from "../ProgressBar/ProgressBar";
-import { visitorsBrowserItems } from "../../data/allDatas";
-import useNumberPersian from "../../hooks/useNumberPersian";
 import SectionTitle from "../SectionTitle/SectionTitle"
 
 function VisitorsBrowsers() {
+
+  const visitorsBrowserItems = useFetchAndFilteredData("visitorsBrowserItems")
+
   return (
     <div className="w-full xl:w-[49%] xl:mr-4">
       <div className="bg-white rounded-lg">
@@ -40,19 +44,19 @@ function VisitorsBrowsers() {
                   }}
                 >
                   <TableCell component="th" scope="row">
-                    <div className="flex items-center">
-                      {visitorBrowserItem.icon}
+                    <div className="flex items-center" >
+                      <div dangerouslySetInnerHTML={convertToSvgHtml(visitorBrowserItem.icon)}></div>
                       <h6 className="mr-3">{visitorBrowserItem.name}</h6>
                     </div>
                   </TableCell>
                   <TableCell align="center">
                     <ProgressBar
-                      progressValue={visitorBrowserItem.percentUsage}
-                      progressColorValue={visitorBrowserItem.progressColor}
+                      progressValue={visitorBrowserItem.percent}
+                      progressColorValue={visitorBrowserItem.progressValueColor}
                     />
                   </TableCell>
                   <TableCell align="center" className="!text-secondary">
-                    {useNumberPersian(visitorBrowserItem.userCounts)}
+                    {useNumberPersian(visitorBrowserItem.count)}
                   </TableCell>
                 </TableRow>
               ))}

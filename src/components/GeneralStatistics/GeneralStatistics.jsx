@@ -1,8 +1,10 @@
-import { generalStatisticsData } from "../../data/allDatas"
+import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import convertToSvgHtml from "../../functions/convertToSvgHtml";
 import useNumberPersian from "../../hooks/useNumberPersian";
 
-
 function GeneralStatistics() {
+  const generalStatisticsData = useFetchAndFilteredData("generalStatisticsData");
+
   return (
     <section className="mt-5 sm:mt-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
@@ -15,17 +17,18 @@ function GeneralStatistics() {
               <h5 className="text-xl">
                 {statistics.statisticsCount < 100
                   ? useNumberPersian(statistics.statisticsCount) + "%"
-                  : useNumberPersian(statistics.statisticsCount)
-                }
+                  : useNumberPersian(statistics.statisticsCount)}
               </h5>
               <h6 className={`${statistics.color} text-sm mt-2`}>
-                {statistics.type}
+                {statistics.watch}
               </h6>
               <span className="text-sm block mt-2 font-iranYekanMedium text-[#a7abc3]">
                 {statistics.caption}
               </span>
             </div>
-            <div className="">{statistics.avatar}</div>
+            <div
+              dangerouslySetInnerHTML={convertToSvgHtml(statistics.avatar)}
+            ></div>
           </div>
         ))}
       </div>

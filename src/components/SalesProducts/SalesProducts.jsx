@@ -15,7 +15,7 @@ function SalesProducts() {
     },
     {
       id: 2,
-      title: "مجموع موجودی  ",
+      title: "مجموع موجودی ",
       price: 2_214,
       progressValue: 30,
       status: " 14% کاهش",

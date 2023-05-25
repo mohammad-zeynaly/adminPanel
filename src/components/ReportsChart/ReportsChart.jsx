@@ -7,12 +7,14 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { reportChartData } from "../../data/allDatas";
+import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
 import useNumberPersian from "../../hooks/useNumberPersian";
-import SectionTitle from "../SectionTitle/SectionTitle";
 import changeTooltipChart from "../../functions/changeTooltipChart";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 function Reports() {
+
+  const reportChartData = useFetchAndFilteredData("reportChartData");
 
   return (
     <div className="w-full mb-5 xl:w-[49%] xl:mb-0">
@@ -67,7 +69,6 @@ function Reports() {
       </div>
     </div>
   );
-  
 }
 
 export default Reports;

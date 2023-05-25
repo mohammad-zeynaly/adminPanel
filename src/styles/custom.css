@@ -66,3 +66,34 @@ tspan {
     width: 116% !important;
   }
 }
+.page-loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999999;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.spinner-loader {
+  color: #5867dd;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 15px;
+  display: inline-block;
+  vertical-align: text-bottom;
+  border: 0.2rem solid #5867dd;
+  border-left-color: transparent;
+  border-radius: 50%;
+  animation: spinner-animation 0.75s linear infinite;
+}
+
+@keyframes spinner-animation {
+  100% {
+    transform: rotate(-360deg);
+  }
+}

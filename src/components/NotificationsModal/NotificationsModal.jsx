@@ -1,14 +1,17 @@
+import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import convertToSvgHtml from "../../functions/convertToSvgHtml";
 import TemplateModal from "../TemplateModal/TemplateModal";
-import { notificationItems } from "../../data/allDatas";
 
 function NotificationsModal() {
+  const notificationItems = useFetchAndFilteredData("notificationItems");
+
   return (
     <TemplateModal modalTitle="اعلان ها" modalCaption="2 اعلان خوانده نشده">
       {notificationItems.map((notification) => (
         <li key={notification.id} className="p-3 flex items-center">
-          <span className={`${notification.bgIcon} flex items-center justify-center p-[0.6rem] rounded-full`}>
-            {notification.icon}
-          </span>
+          <span
+            className={`${notification.bgIcon} flex items-center justify-center p-[0.6rem] rounded-full`}
+            dangerouslySetInnerHTML={convertToSvgHtml(notification.icon)}></span>
           <div className="text-2sm pr-4">
             <h5> {notification.description} </h5>
             <h6 className="flex items-center pt-2 text-[#a7abc3]">

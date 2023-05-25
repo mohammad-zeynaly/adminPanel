@@ -1,7 +1,8 @@
-////////////////////////////////////////// data page SalesAndManagement //////////////////////////////////////////////
 
-//data summery in sidebar
-const summaryItems = [
+// all data admin panel
+
+const allDatasAdminPanel = [
+  // data page SaleAndManagement
   {
     id: 1,
     bgClass: "bg-[#ffb822]",
@@ -21,6 +22,7 @@ const summaryItems = [
         <path d="M11 2a1 1 0 011-1h2a1 1 0 011 1v12h.5a.5.5 0 010 1H.5a.5.5 0 010-1H1v-3a1 1 0 011-1h2a1 1 0 011 1v3h1V7a1 1 0 011-1h2a1 1 0 011 1v7h1V2z"></path>
       </svg>
     ),
+    type: "summaryItems",
   },
   {
     id: 2,
@@ -41,6 +43,7 @@ const summaryItems = [
         <path d="M0 2v13h17V2H0zm8.494 7.817L1.598 3h13.82L8.494 9.817zM5.755 8.516L1 13.198V3.815l4.755 4.701zm.711.703l2.026 2.003 1.996-1.966 4.8 4.744H1.611l4.855-4.781zm4.735-.664L16 3.83v9.467l-4.799-4.742z"></path>
       </svg>
     ),
+    type: "summaryItems",
   },
   {
     id: 3,
@@ -61,13 +64,11 @@ const summaryItems = [
         <path d="M858.5 763.6a374 374 0 00-80.6-119.5 375.63 375.63 0 00-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 00-80.6 119.5A371.7 371.7 0 00136 901.8a8 8 0 008 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 008-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"></path>
       </svg>
     ),
+    type: "summaryItems",
   },
-];
 
-// data QuickAccessModal
-const accessItems = [
   {
-    id: 1,
+    id: 4,
     bgClass: "bg-[#F3C6C6]",
     textClass: "text-third",
     icon: (
@@ -84,9 +85,10 @@ const accessItems = [
       </svg>
     ),
     title: "دسته بندی ها ",
+    type: "accessItems",
   },
   {
-    id: 2,
+    id: 5,
     bgClass: "bg-[#C9E1F6]",
     textClass: "text-[#72B5EE]",
     icon: (
@@ -103,9 +105,10 @@ const accessItems = [
       </svg>
     ),
     title: "محصولات ",
+    type: "accessItems",
   },
   {
-    id: 3,
+    id: 6,
     bgClass: "bg-[#FFEABC]",
     textClass: "text-[#FFBA27]",
     icon: (
@@ -122,9 +125,10 @@ const accessItems = [
       </svg>
     ),
     title: "گزارشات",
+    type: "accessItems",
   },
   {
-    id: 4,
+    id: 7,
     bgClass: "bg-[#CFD0DB]",
     textClass: "text-[#6C757D]",
     icon: (
@@ -141,45 +145,44 @@ const accessItems = [
       </svg>
     ),
     title: " سایر",
+    type: "accessItems",
   },
-];
 
-// data MessagesModal
-const messageItems = [
   {
-    id: 1,
+    id: 8,
     avatar: "م",
     avatarBg: "bg-[#0abb87]",
     name: " محمد زینالی",
     time: "08:50",
+    type: "messageItems",
   },
   {
-    id: 2,
+    id: 9,
     avatar: "ج",
     avatarBg: "bg-[#5867dd]",
     name: "جان اسنو",
     time: "10:23",
+    type: "messageItems",
   },
   {
-    id: 3,
+    id: 10,
     avatar: "ک",
     avatarBg: "bg-third",
     name: "استیو جابز",
     time: "09:33",
+    type: "messageItems",
   },
   {
-    id: 4,
+    id: 11,
     avatar: "آ",
     avatarBg: "bg-[#55a6eb]",
     name: "استیو راجرز",
     time: "20:13",
+    type: "messageItems",
   },
-];
 
-// data NotificationsModal
-const notificationItems = [
   {
-    id: 1,
+    id: 12,
     bgIcon: "bg-[#CCE4F9]",
     icon: (
       <svg
@@ -198,9 +201,10 @@ const notificationItems = [
     ),
     description: "استیو جابز یک ضمیمه جدید به تیکت افزود گزارش باگ نرم افزار",
     clock: "8 ساعت پیش",
+    type: "notificationItems",
   },
   {
-    id: 2,
+    id: 13,
     bgIcon: "bg-[rgba(255,184,34,0.3)]",
     icon: (
       <svg
@@ -219,9 +223,10 @@ const notificationItems = [
     ),
     description: "کاترین یک تیکت جدید ثبت کرد نحوه پرداخت ",
     clock: "دیروز",
+    type: "notificationItems",
   },
   {
-    id: 3,
+    id: 14,
     bgIcon: "bg-[rgba(10,187,135,0.3)]",
     icon: (
       <svg
@@ -241,13 +246,11 @@ const notificationItems = [
     ),
     description: " کاترین تنظیمات دسته تیکت را تغییر داد پرداخت و صورتحساب ",
     clock: "1 روز پیش",
+    type: "notificationItems",
   },
-];
 
-// data social Item
-const socialItems = [
   {
-    id: 1,
+    id: 15,
     linkSocial: "https://linkedin.com/in/mohammad-zeynali-816a55228",
     icon: (
       <svg
@@ -263,9 +266,10 @@ const socialItems = [
         <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1168.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"></path>
       </svg>
     ),
+    type: "socialItems",
   },
   {
-    id: 2,
+    id: 16,
     linkSocial: "https://wa.me/9911406098",
     icon: (
       <svg
@@ -281,9 +285,10 @@ const socialItems = [
         <path d="M13.601 2.326A7.854 7.854 0 007.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 003.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0013.6 2.326zM7.994 14.521a6.573 6.573 0 01-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 01-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 014.66 1.931 6.557 6.557 0 011.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 00-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
       </svg>
     ),
+    type: "socialItems",
   },
   {
-    id: 3,
+    id: 17,
     linkSocial: "https://t.me/zeynali2003/",
     icon: (
       <svg
@@ -299,9 +304,10 @@ const socialItems = [
         <path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path>
       </svg>
     ),
+    type: "socialItems",
   },
   {
-    id: 4,
+    id: 18,
     linkSocial: "mailto:051.mhmdzynaly977@gmail.co",
     icon: (
       <svg
@@ -334,13 +340,11 @@ const socialItems = [
         ></path>
       </svg>
     ),
+    type: "socialItems",
   },
-];
 
-// data Slider network sales
-const StatisticsSliderItems = [
   {
-    id: 1,
+    id: 19,
     title: "همه",
     icon: (
       <svg
@@ -361,9 +365,10 @@ const StatisticsSliderItems = [
     bgColor: "bg-third",
     count: 2_587,
     progressValue: 75,
+    type: "StatisticsSliderItems",
   },
   {
-    id: 2,
+    id: 20,
     title: "مستقیم",
     icon: (
       <svg
@@ -386,9 +391,10 @@ const StatisticsSliderItems = [
     bgColor: "bg-[#0abb87]",
     count: 562,
     progressValue: 35,
+    type: "StatisticsSliderItems",
   },
   {
-    id: 3,
+    id: 21,
     title: "تلفن",
     icon: (
       <svg
@@ -411,9 +417,10 @@ const StatisticsSliderItems = [
     bgColor: "bg-[#55a6eb]",
     count: 256,
     progressValue: 45,
+    type: "StatisticsSliderItems",
   },
   {
-    id: 4,
+    id: 22,
     title: "فیسبوک",
     icon: (
       <svg
@@ -434,9 +441,10 @@ const StatisticsSliderItems = [
     bgColor: "bg-[#3b5998]",
     count: 147,
     progressValue: 50,
+    type: "StatisticsSliderItems",
   },
   {
-    id: 5,
+    id: 23,
     title: "واتس اپ",
     icon: (
       <svg
@@ -457,9 +465,10 @@ const StatisticsSliderItems = [
     bgColor: "bg-[#43d854]",
     count: 847,
     progressValue: 40,
+    type: "StatisticsSliderItems",
   },
   {
-    id: 6,
+    id: 24,
     title: " اینستاگرام",
     icon: (
       <svg
@@ -480,9 +489,10 @@ const StatisticsSliderItems = [
     bgColor: "bg-[#3f729b]",
     count: 1968,
     progressValue: 70,
+    type: "StatisticsSliderItems",
   },
   {
-    id: 7,
+    id: 25,
     title: " گوگل",
     icon: (
       <svg
@@ -503,9 +513,10 @@ const StatisticsSliderItems = [
     bgColor: "bg-[#FF3D00]",
     count: 3654,
     progressValue: 85,
+    type: "StatisticsSliderItems",
   },
   {
-    id: 8,
+    id: 26,
     title: " سایر",
     icon: (
       <svg
@@ -528,81 +539,98 @@ const StatisticsSliderItems = [
     bgColor: "bg-[#ffb822]",
     count: 206,
     progressValue: 45,
+    type: "StatisticsSliderItems",
   },
-];
-
-// data chart reports
-const reportChartData = [
   {
+    id: 27,
     name: "1391",
     average: 100,
     sale: 200,
+    type: "reportChartData",
   },
   {
+    id: 28,
     name: "1392",
     average: 200,
     sale: 300,
+    type: "reportChartData",
   },
   {
+    id: 29,
     name: "1393",
     average: 300,
     sale: 400,
+    type: "reportChartData",
   },
   {
+    id: 30,
     name: "1394",
     average: 400,
     sale: 500,
+    type: "reportChartData",
   },
   {
+    id: 31,
     name: "1395",
     average: 500,
     sale: 600,
+    type: "reportChartData",
   },
   {
+    id: 32,
     name: "1396",
     average: 600,
     sale: 700,
+    type: "reportChartData",
   },
   {
+    id: 33,
     name: "1397",
     average: 700,
     sale: 800,
+    type: "reportChartData",
   },
   {
+    id: 34,
     name: "1398",
     average: 800,
     sale: 900,
+    type: "reportChartData",
   },
-];
 
-// data chart regional sales
-const regionalSalesChartData = [
   {
+    id: 35,
     name: "آفریقا",
     population: 1216,
+    type: "regionalSalesChartData",
   },
   {
+    id: 36,
     name: "آسیا",
     population: 4561,
+    type: "regionalSalesChartData",
   },
   {
+    id: 37,
     name: "اروپا",
     population: 746,
+    type: "regionalSalesChartData",
   },
   {
+    id: 38,
     name: "آمریکا",
     population: 1002,
+    type: "regionalSalesChartData",
   },
   {
+    id: 39,
     name: "استرالیا",
     population: 26,
+    type: "regionalSalesChartData",
   },
-];
 
-// data chart customers
-const totalCustomersData = [
   {
-    id: 1,
+    id: 40,
     title: "کل مشتریان",
     chart: (
       <svg width="100" height="50" className="peity">
@@ -641,9 +669,10 @@ const totalCustomersData = [
     count: 1_241,
     status: " 23% افزایش در هفته پیش",
     textClass: "text-primary",
+    type: "totalCustomersData",
   },
   {
-    id: 2,
+    id: 41,
     title: "میانگین سفارش",
     chart: (
       <svg width="100" height="50" className="peity">
@@ -683,122 +712,132 @@ const totalCustomersData = [
     status: "4 واحد کمتر از هفته پیش",
     classBetween: "xl:mr-4",
     textClass: "text-secondary",
+    type: "totalCustomersData",
   },
-];
 
-// data chart status buy chart
-const statusBuyChartData = [
   {
+    id: 42,
     name: "فروردین",
     success: 10,
     back: 15,
+    type: "statusBuyChartData",
   },
   {
+    id: 43,
     name: "اردیبهشت",
-
     success: 20,
     back: 10,
+    type: "statusBuyChartData",
   },
   {
+    id: 44,
     name: "خرداد",
-
     success: 35,
     back: 11,
+    type: "statusBuyChartData",
   },
   {
+    id: 45,
     name: "تیر",
-
     success: 43,
     back: 5,
+    type: "statusBuyChartData",
   },
   {
+    id: 46,
     name: "مرداد",
-
     success: 57,
     back: 8,
+    type: "statusBuyChartData",
   },
   {
+    id: 47,
     name: "شهریور",
-
     success: 64,
     back: 14,
+    type: "statusBuyChartData",
   },
   {
+    id: 48,
     name: "مهر",
-
     success: 73,
     back: 9,
+    type: "statusBuyChartData",
   },
   {
+    id: 49,
     name: "آبان",
-
     success: 57,
     back: 13,
+    type: "statusBuyChartData",
   },
   {
+    id: 50,
     name: "آذر",
-
     success: 45,
     back: 7,
+    type: "statusBuyChartData",
   },
   {
+    id: 51,
     name: "دی",
-
     success: 62,
     back: 14,
+    type: "statusBuyChartData",
   },
   {
+    id: 52,
     name: "بهمن",
-
     success: 96,
     back: 11,
+    type: "statusBuyChartData",
   },
   {
+    id: 53,
     name: "اسفند",
-
     success: 120,
     back: 15,
+    type: "statusBuyChartData",
   },
-];
 
-// data networks sales & Average
-const averageSale = [
   {
-    id: 1,
+    id: 54,
     title: "گوگل",
     progressPercent: 42,
     progressValueColor: "bg-[#FF3D00]",
+    type: "averageSale",
   },
   {
-    id: 2,
+    id: 55,
     title: "اینستاگرام",
     progressPercent: 34,
     progressValueColor: "bg-[#3f729b]",
+    type: "averageSale",
   },
   {
-    id: 3,
+    id: 56,
     title: "واتس اپ",
     progressPercent: 60,
     progressValueColor: "bg-[#43d854]",
+    type: "averageSale",
   },
   {
-    id: 4,
+    id: 57,
     title: "فیسبوک",
     progressPercent: 20,
     progressValueColor: "bg-[#3b5998]",
+    type: "averageSale",
   },
   {
-    id: 5,
+    id: 58,
     title: "لینکدین",
     progressPercent: 30,
     progressValueColor: "bg-[#55a6eb]",
+    type: "averageSale",
   },
-];
 
-//data income Box
-const incomeItems = [
   {
-    id: 1,
+    id: 59,
     title: "سود ناخالص",
     icon: (
       <svg
@@ -816,9 +855,10 @@ const incomeItems = [
     ),
     price: 1_958_104,
     borderClass: "border-secondary",
+    type: "incomeItems",
   },
   {
-    id: 2,
+    id: 60,
     title: " کسر مالیات",
     icon: (
       <svg
@@ -836,9 +876,10 @@ const incomeItems = [
     ),
     price: 234_769,
     borderClass: "border-third",
+    type: "incomeItems",
   },
   {
-    id: 3,
+    id: 61,
     title: "سود خالص",
     icon: (
       <svg
@@ -856,254 +897,274 @@ const incomeItems = [
     ),
     price: 1_608_469,
     borderClass: "border-[#ffb822]",
+    type: "incomeItems",
   },
-];
 
-// all data table income
-const allIncomeItemData = [
   {
-    id: 1,
+    id: 62,
     date: "1402/03/1",
     saleCount: 1_050,
     grossProfit: 32_580,
     tax: 3_023,
     netProfit: 28_670,
+    type: "allIncomeItemData",
   },
   {
-    id: 2,
+    id: 63,
     date: "1402/03/2",
     saleCount: 780,
     grossProfit: 22_380,
     tax: 2_233,
     netProfit: 20_147,
+    type: "allIncomeItemData",
   },
   {
-    id: 3,
+    id: 64,
     date: "1402/03/3",
     saleCount: 1_980,
     grossProfit: 39_580,
     tax: 3_583,
     netProfit: 35_997,
+    type: "allIncomeItemData",
   },
   {
-    id: 4,
+    id: 65,
     date: "1402/03/4",
     saleCount: 300,
     grossProfit: 12_580,
     tax: 1_075,
     netProfit: 11_505,
+    type: "allIncomeItemData",
   },
   {
-    id: 5,
+    id: 66,
     date: "1402/03/5",
     saleCount: 940,
     grossProfit: 24_580,
     tax: 2_750,
     netProfit: 21_730,
+    type: "allIncomeItemData",
   },
   {
-    id: 6,
+    id: 67,
     date: "1402/03/6",
     saleCount: 1_280,
     grossProfit: 28_580,
     tax: 2_930,
     netProfit: 25_650,
+    type: "allIncomeItemData",
   },
-];
 
-// all data recent customers data
-const recentCustomersData = [
   {
-    id: 1,
+    id: 68,
     avatar: "./assets/images/customers/customer-1.jpg",
     name: "محمد زینالی",
     productName: "ایرپاد",
     productCount: 2,
     statusPayment: false,
+    type: "recentCustomersData",
   },
   {
-    id: 2,
+    id: 69,
     avatar: "./assets/images/customers/customer-2.jpg",
     name: " حمید نعمتی",
     productName: "هندزفری بلوتوثی",
     productCount: 1,
     statusPayment: true,
+    type: "recentCustomersData",
   },
   {
-    id: 3,
+    id: 70,
     avatar: "./assets/images/customers/customer-3.jpg",
     name: "  رضا همتلو",
     productName: " موبایل",
     productCount: 1,
     statusPayment: true,
+    type: "recentCustomersData",
   },
   {
-    id: 4,
+    id: 71,
     avatar: "./assets/images/customers/customer-4.jpg",
     name: "محمد محمدی",
     productName: " فلش مموری",
     productCount: 1,
     statusPayment: false,
+    type: "recentCustomersData",
   },
   {
-    id: 5,
+    id: 72,
     avatar: "./assets/images/customers/customer-5.jpg",
     name: "   بابک احمدی",
     productName: " کول پد",
     productCount: 1,
     statusPayment: true,
+    type: "recentCustomersData",
   },
-];
 
-/* *************************************************************************************************************** */
+  // data page support
 
-////////////////////////////////////////// data page support //////////////////////////////////////////////
-// all data support Time Boxes
-const supportTimeBoxes = [
   {
-    id: 1,
+    id: 73,
     img: "./assets/images/supportChart/complaintsChart.png",
     percent: 65,
     title: "زمان رسیدگی به شکایت",
     caption: "میانگین زمان رسیدگی",
     time: "در اولین فرصت کاری",
+    type: "supportTimeBoxes",
   },
   {
-    id: 2,
+    id: 74,
     img: "./assets/images/supportChart/responseSpeedChart.png",
     percent: 42,
     title: "میانگین سرعت پاسخ",
     caption: "میانگین زمان پاسخ",
     time: "کمتر از یک ساعت",
+    type: "supportTimeBoxes",
   },
-];
 
-// all data ticket messages items
-const ticketMessagesItems = [
   {
-    id: 1,
-    ticketTitle: " تیکت جدید",
-    ticketCount: 321,
+    id: 75,
+    title: " تیکت جدید",
+    count: 321,
     growth: 1.2,
     growthColor: "text-secondary",
-    progressColor: "bg-primary",
+    progressValueColor: "bg-primary",
     progressPercent: 85,
+    type: "ticketMessagesItems",
   },
   {
-    id: 2,
-    ticketTitle: " تیکت حل شده",
-    ticketCount: 70,
+    id: 76,
+    title: " تیکت حل شده",
+    count: 70,
     growth: "2.2",
     growthColor: "text-third",
-    progressColor: "bg-secondary",
+    progressValueColor: "bg-secondary",
     progressPercent: 25,
+    type: "ticketMessagesItems",
   },
   {
-    id: 3,
-    ticketTitle: "تیکت باز",
-    ticketCount: 100,
+    id: 77,
+    title: "تیکت باز",
+    count: 100,
     growth: 4.2,
     growthColor: "text-secondary",
-    progressColor: "bg-[#55a6eb]",
+    progressValueColor: "bg-[#55a6eb]",
     progressPercent: 55,
+    type: "ticketMessagesItems",
   },
   {
-    id: 4,
-    ticketTitle: " تیکت در انتظار",
-    ticketCount: 125,
+    id: 78,
+    title: " تیکت در انتظار",
+    count: 125,
     growth: 4.2,
     growthColor: "text-secondary",
-    progressColor: "bg-[#ffb822]",
+    progressValueColor: "bg-[#ffb822]",
     progressPercent: 75,
+    type: "ticketMessagesItems",
   },
-];
 
-// all data ticket status chart data
-const ticketStatusChartData = [
   {
+    id: 79,
     name: "فروردین",
     newTicket: 40,
     solvedTicket: 10,
     pendingTicket: 17,
+    type: "ticketStatusChartData",
   },
   {
+    id: 80,
     name: "اردیبهشت",
     newTicket: 47,
     solvedTicket: 12,
     pendingTicket: 11,
+    type: "ticketStatusChartData",
   },
   {
+    id: 81,
     name: "خرداد",
     newTicket: 44,
     solvedTicket: 7,
     pendingTicket: 22,
+    type: "ticketStatusChartData",
   },
   {
+    id: 82,
     name: "تیر",
     newTicket: 38,
     solvedTicket: 5,
     pendingTicket: 18,
+    type: "ticketStatusChartData",
   },
   {
+    id: 83,
     name: "مرداد",
     newTicket: 27,
     solvedTicket: 4,
     pendingTicket: 12,
+    type: "ticketStatusChartData",
   },
   {
+    id: 84,
     name: "شهریور",
     newTicket: 40,
     solvedTicket: 10,
     pendingTicket: 17,
+    type: "ticketStatusChartData",
   },
   {
+    id: 85,
     name: "مهر",
     newTicket: 47,
     solvedTicket: 12,
     pendingTicket: 11,
+    type: "ticketStatusChartData",
   },
   {
+    id: 86,
     name: "آبان",
     newTicket: 44,
     solvedTicket: 7,
     pendingTicket: 22,
+    type: "ticketStatusChartData",
   },
   {
+    id: 87,
     name: "آذر",
     newTicket: 38,
     solvedTicket: 5,
     pendingTicket: 18,
+    type: "ticketStatusChartData",
   },
   {
+    id: 88,
     name: "دی",
     newTicket: 27,
     solvedTicket: 4,
     pendingTicket: 12,
+    type: "ticketStatusChartData",
   },
   {
+    id: 89,
     name: "بهمن",
     newTicket: 40,
     solvedTicket: 10,
     pendingTicket: 17,
+    type: "ticketStatusChartData",
   },
   {
+    id: 90,
     name: "اسفند",
     newTicket: 27,
     solvedTicket: 12,
     pendingTicket: 11,
+    type: "ticketStatusChartData",
   },
-];
 
-/* *************************************************************************************************************** */
-
-////////////////////////////////////////// data page wesite statistics  //////////////////////////////////////////////
-
-// data general Statistics Items
-const generalStatisticsData = [
+  // data page wesite statistics
   {
-    id: 1,
+    id: 91,
     statisticsCount: 3_605,
-    type: "تعداد کلیک",
+    watch: "تعداد کلیک",
     color: "text-primary",
     caption: "لورم ایپسوم",
     avatar: (
@@ -1120,11 +1181,12 @@ const generalStatisticsData = [
         ></path>
       </svg>
     ),
+    type: "generalStatisticsData",
   },
   {
-    id: 2,
+    id: 92,
     statisticsCount: 3_137,
-    type: "تعداد بازدید",
+    watch: "تعداد بازدید",
     color: "text-secondary",
     caption: "لورم ایپسوم",
     avatar: (
@@ -1141,11 +1203,12 @@ const generalStatisticsData = [
         ></path>
       </svg>
     ),
+    type: "generalStatisticsData",
   },
   {
-    id: 3,
+    id: 93,
     statisticsCount: 8_765,
-    type: "مجموع تبدیل",
+    watch: "مجموع تبدیل",
     color: "text-[#FFB822]",
     caption: "لورم ایپسوم",
     avatar: (
@@ -1162,11 +1225,12 @@ const generalStatisticsData = [
         ></path>
       </svg>
     ),
+    type: "generalStatisticsData",
   },
   {
-    id: 4,
+    id: 94,
     statisticsCount: 68,
-    type: "نرخ بارگذاری صفحه",
+    watch: "نرخ بارگذاری صفحه",
     color: "text-[#55A6EB]",
     caption: "لورم ایپسوم",
     avatar: (
@@ -1183,101 +1247,119 @@ const generalStatisticsData = [
         ></path>
       </svg>
     ),
+    type: "generalStatisticsData",
   },
-];
 
-const devicesStatisticsChartData = [
   {
+    id: 95,
     mobile: 2000,
     desktop: 1000,
     other: 250,
+    type: "devicesStatisticsChartData",
   },
   {
+    id: 96,
     mobile: 2150,
     desktop: 1050,
     other: 280,
+    type: "devicesStatisticsChartData",
   },
   {
+    id: 97,
     mobile: 2300,
     desktop: 1200,
     other: 350,
+    type: "devicesStatisticsChartData",
   },
   {
+    id: 98,
     mobile: 2400,
     desktop: 980,
     other: 320,
+    type: "devicesStatisticsChartData",
   },
   {
+    id: 99,
     mobile: 2500,
     desktop: 850,
     other: 200,
+    type: "devicesStatisticsChartData",
   },
   {
+    id: 100,
     mobile: 2600,
     desktop: 1300,
     other: 500,
+    type: "devicesStatisticsChartData",
   },
   {
+    id: 101,
     mobile: 4300,
     desktop: 1800,
     other: 550,
+    type: "devicesStatisticsChartData",
   },
   {
+    id: 102,
     mobile: 3000,
     desktop: 1500,
     other: 400,
+    type: "devicesStatisticsChartData",
   },
   {
+    id: 103,
     mobile: 3500,
     desktop: 1300,
     other: 450,
+    type: "devicesStatisticsChartData",
   },
   {
+    id: 104,
     mobile: 3300,
     desktop: 1150,
     other: 390,
+    type: "devicesStatisticsChartData",
   },
-];
 
-//data total views items
-const totalViewsItems = [
   {
-    id: 1,
+    id: 105,
     title: "صفحه اصلی",
     percent: 65.35,
-    progressColor: "bg-[#55a6eb]",
+    progressValueColor: "bg-[#55a6eb]",
+    type: "totalViewsItems",
   },
   {
-    id: 2,
+    id: 106,
     title: "درباره من	",
     percent: 51.2,
-    progressColor: "bg-[#FFB822]",
+    progressValueColor: "bg-[#FFB822]",
+    type: "totalViewsItems",
   },
   {
-    id: 3,
+    id: 107,
     title: "محصولات	",
     percent: 38.5,
-    progressColor: "bg-third",
+    progressValueColor: "bg-third",
+    type: "totalViewsItems",
   },
   {
-    id: 4,
+    id: 108,
     title: " دسته‌بندی ها	",
     percent: 40,
-    progressColor: "bg-primary",
+    progressValueColor: "bg-primary",
+    type: "totalViewsItems",
   },
   {
-    id: 5,
+    id: 109,
     title: "تماس",
     percent: 80,
-    progressColor: "bg-secondary",
+    progressValueColor: "bg-secondary",
+    type: "totalViewsItems",
   },
-];
 
-//data visitors Browser Items
-const visitorsBrowserItems = [
   {
-    id: 1,
-    name: "گوگل کروم",
+    id: 110,
+    title: "گوگل کروم",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1295,13 +1377,14 @@ const visitorsBrowserItems = [
         ></path>
       </svg>
     ),
-    percentUsage: 80,
-    progressColor: "bg-secondary",
-    userCounts: 6_000,
+    percent: 80,
+    progressValueColor: "bg-secondary",
+    count: 6_000,
+    type: "visitorsBrowserItems",
   },
   {
-    id: 2,
-    name: "فایرفاکس",
+    id: 111,
+    title: "فایرفاکس",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1318,13 +1401,14 @@ const visitorsBrowserItems = [
         ></path>
       </svg>
     ),
-    percentUsage: 62,
-    progressColor: "bg-[#FF652A]",
-    userCounts: 3_800,
+    percent: 62,
+    progressValueColor: "bg-[#FF652A]",
+    count: 3_800,
+    type: "visitorsBrowserItems",
   },
   {
-    id: 3,
-    name: "اج",
+    id: 112,
+    title: "اج",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1341,13 +1425,14 @@ const visitorsBrowserItems = [
         ></path>
       </svg>
     ),
-    percentUsage: 36,
-    progressColor: "bg-[#2EC2DD]",
-    userCounts: 2_400,
+    percent: 36,
+    progressValueColor: "bg-[#2EC2DD]",
+    count: 2_400,
+    type: "visitorsBrowserItems",
   },
   {
-    id: 4,
-    name: "سافاری",
+    id: 113,
+    title: "سافاری",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1364,13 +1449,14 @@ const visitorsBrowserItems = [
         ></path>
       </svg>
     ),
-    percentUsage: 28,
-    progressColor: "bg-[#26A5F3]",
-    userCounts: 1_600,
+    percent: 28,
+    progressValueColor: "bg-[#26A5F3]",
+    count: 1_600,
+    type: "visitorsBrowserItems",
   },
   {
-    id: 5,
-    name: "اوپرا",
+    id: 114,
+    title: "اوپرا",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1387,96 +1473,113 @@ const visitorsBrowserItems = [
         ></path>
       </svg>
     ),
-    percentUsage: 24,
-    progressColor: "bg-[#FF4B4B]",
-    userCounts: 1_200,
+    percent: 24,
+    progressValueColor: "bg-[#FF4B4B]",
+    count: 1_200,
+    type: "visitorsBrowserItems",
   },
-];
 
+  // data page  Profile
 
-
-
-/* *************************************************************************************************************** */
-
-//////////////////////////////// data page wesite user Profile Information  ////////////////////////////////
-
-
-// data user Profile Information
-const userProfileInformation = [
-  { id: 1, informationKey: "نام", informationValue: "محمد" },
-  { id: 2, informationKey: "نام خانوادگی", informationValue: "زینالی" },
-  { id: 3, informationKey: "سن", informationValue: 19 },
-  { id: 4, informationKey: "شغل", informationValue: "توسعه دهنده Front-end" },
-  { id: 5, informationKey: "شهر", informationValue: "تبریز" },
-  { id: 6, informationKey: "تلفن", informationValue: "09911406098" },
   {
-    id: 7,
+    id: 115,
+    informationKey: "نام",
+    informationValue: "محمد",
+    type: "userProfileInformation",
+  },
+  {
+    id: 116,
+    informationKey: "نام خانوادگی",
+    informationValue: "زینالی",
+    type: "userProfileInformation",
+  },
+  {
+    id: 117,
+    informationKey: "سن",
+    informationValue: 19,
+    type: "userProfileInformation",
+  },
+  {
+    id: 118,
+    informationKey: "شغل",
+    informationValue: "توسعه دهنده Front-end",
+    type: "userProfileInformation",
+  },
+  {
+    id: 119,
+    informationKey: "شهر",
+    informationValue: "تبریز",
+    type: "userProfileInformation",
+  },
+  {
+    id: 120,
+    informationKey: "تلفن",
+    informationValue: "09911406098",
+    type: "userProfileInformation",
+  },
+  {
+    id: 121,
     informationKey: "ایمیل",
     informationValue: "mhmdzynaly977@gmail.com",
+    type: "userProfileInformation",
   },
-];
 
-
-// data user Profile Skills 
-const userProfileSkillsData = [
-  { id: 1, skill: "HTML5", progressSkill: 95, colorProgress: "bg-[#ffb822]" },
-  { id: 2, skill: "css3", progressSkill: 95, colorProgress: "bg-[#2862E9]" },
-  { id: 3, skill: "sass", progressSkill: 90, colorProgress: "bg-[#C4588D]" },
   {
-    id: 4,
-    skill: "Bootstrap",
-    progressSkill: 90,
-    colorProgress: "bg-[#6F11EF]",
+    id: 122,
+    title: "HTML5",
+    progressValue: 95,
+    progressValueColor: "bg-[#ffb822]",
+    type: "userProfileSkillsData",
   },
   {
-    id: 5,
+    id: 123,
+    title: "css3",
+    progressValue: 95,
+    progressValueColor: "bg-[#2862E9]",
+    type: "userProfileSkillsData",
+  },
+  {
+    id: 124,
+    skill: "sass",
+    progressValue: 90,
+    progressValueColor: "bg-[#C4588D]",
+    type: "userProfileSkillsData",
+  },
+  {
+    id: 125,
+    title: "Bootstrap",
+    progressValue: 90,
+    progressValueColor: "bg-[#6F11EF]",
+    type: "userProfileSkillsData",
+  },
+  {
+    id: 126,
     skill: "TailwindCSS",
-    progressSkill: 90,
-    colorProgress: "bg-[#38BDF8]",
+    progressValue: 90,
+    progressValueColor: "bg-[#38BDF8]",
+    type: "userProfileSkillsData",
   },
   {
-    id: 6,
-    skill: "JavaScript",
-    progressSkill: 75,
-    colorProgress: "bg-[#E8D44D]",
+    id: 127,
+    title: "JavaScript",
+    progressValue: 75,
+    progressValueColor: "bg-[#E8D44D]",
+    type: "userProfileSkillsData",
   },
   {
-    id: 7,
-    skill: "React.js",
-    progressSkill: 80,
-    colorProgress: "bg-[#00D1F7]",
+    id: 128,
+    title: "React.js",
+    progressValue: 80,
+    progressValueColor: "bg-[#00D1F7]",
+    type: "userProfileSkillsData",
   },
   {
-    id: 8,
-    skill: "Redux",
-    progressSkill: 80,
-    colorProgress: "bg-[#7248B6]",
+    id: 129,
+    title: "Redux",
+    progressValue: 80,
+    progressValueColor: "bg-[#7248B6]",
+    type: "userProfileSkillsData",
   },
 ];
 
-
-export {
-  accessItems,
-  summaryItems,
-  messageItems,
-  notificationItems,
-  socialItems,
-  StatisticsSliderItems,
-  reportChartData,
-  regionalSalesChartData,
-  totalCustomersData,
-  averageSale,
-  incomeItems,
-  allIncomeItemData,
-  recentCustomersData,
-  supportTimeBoxes,
-  ticketMessagesItems,
-  ticketStatusChartData,
-  statusBuyChartData,
-  generalStatisticsData,
-  devicesStatisticsChartData,
-  totalViewsItems,
-  visitorsBrowserItems,
-  userProfileInformation,
-  userProfileSkillsData,
-};
+export default allDatasAdminPanel;

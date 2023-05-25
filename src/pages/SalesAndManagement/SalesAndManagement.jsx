@@ -5,8 +5,10 @@ import CustomersChart from "../../components/CustomersChart/CustomersChart";
 import SalesChart from "../../components/SalesChart/SalesChart";
 import RecentIncome from "../../components/RecentIncome/RecentIncome";
 import RecentCustomers from "../../components/RecentCustomers/RecentCustomers";
+import Loader from "../../components/Loader/Loader";
 
 function Sale() {
+
   return (
     <div className="w-full">
       <Topbar BreadcrumbTitle="فروش و مدیریت مشتری" BreadcrumbLink="/" />
@@ -17,9 +19,11 @@ function Sale() {
         <SalesChart />
         <RecentIncome />
         <RecentCustomers />
+        <Loader />
       </>
     </div>
   );
+  
 }
 
 export default Sale;

@@ -1,11 +1,14 @@
 import SwiperCore, { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { StatisticsSliderItems } from "../../data/allDatas";
+import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData"
 import StatisticsSliderBox from "./StatisticsSliderBox";
 SwiperCore.use([Autoplay]);
 import "swiper/css";
 
 function StatisticsSlider() {
+
+  const StatisticsSliderItems = useFetchAndFilteredData("StatisticsSliderItems")
+
   return (
     <div className="bg-white rounded-lg p-4 mt-6">
       <h5 className="text-2sm font-iranYekanBold"> شبکه های فروش </h5>

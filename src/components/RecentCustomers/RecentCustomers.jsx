@@ -1,9 +1,12 @@
+import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import SectionTitle from "../SectionTitle/SectionTitle"
 import TableTemplate from "../TableTemplate/TableTemplate";
 import { TableHead, TableRow, TableCell, TableBody } from "@mui/material";
-import { recentCustomersData } from "../../data/allDatas";
-import SectionTitle from "../SectionTitle/SectionTitle"
 
 function RecentCustomers() {
+
+  const recentCustomersData = useFetchAndFilteredData("recentCustomersData")
+
   return (
     <section className="mt-5 sm:mt-8 mb-5 sm:mb-8">
       <div className="flex flex-col xl:flex-row justify-between items-center">

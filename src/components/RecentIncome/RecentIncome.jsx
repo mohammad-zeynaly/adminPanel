@@ -1,11 +1,14 @@
 import TableTemplate from "../TableTemplate/TableTemplate";
+import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
 import useNumberPersian from "../../hooks/useNumberPersian";
-import { incomeItems } from "../../data/allDatas";
+import convertToSvgHtml from "../../functions/convertToSvgHtml";
 import { TableHead, TableRow, TableCell, TableBody } from "@mui/material";
-import { allIncomeItemData } from "../../data/allDatas";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 function RecentIncome() {
+  const incomeItems = useFetchAndFilteredData("incomeItems");
+  const allIncomeItemData = useFetchAndFilteredData("allIncomeItemData");
+
   return (
     <section className="mt-5 sm:mt-8 bg-white rounded-lg p-4">
       <SectionTitle sectionClass="font-iranYekanBold my-4 text-center sm:text-right">
@@ -16,9 +19,8 @@ function RecentIncome() {
           <div key={incomeBox.id} className="flex items-center mb-4 sm:mb-0">
             <div
               className={`flex items-center justify-center border-2 ${incomeBox.borderClass} rounded-lg w-10 h-10`}
-            >
-              {incomeBox.icon}
-            </div>
+              dangerouslySetInnerHTML={convertToSvgHtml(incomeBox.icon)}
+            ></div>
             <span className="pr-3">
               <span className="text-sm"> {incomeBox.title} </span>
               <h6 className="text-lg sm:text-xl font-iranYekanBold mt-1">

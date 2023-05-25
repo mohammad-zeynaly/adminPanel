@@ -1,7 +1,11 @@
+import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import convertToSvgHtml from "../../functions/convertToSvgHtml";
 import { Avatar } from "@mui/material";
-import { socialItems } from "../../data/allDatas";
 
 function AdminDetailModal() {
+
+  const socialItems = useFetchAndFilteredData("socialItems")
+
   return (
     <div
       onClick={(event) => event.stopPropagation()}
@@ -50,8 +54,9 @@ function AdminDetailModal() {
               key={socialItem.id}
               className="mr-3"
               href={socialItem.linkSocial}
+              dangerouslySetInnerHTML={convertToSvgHtml(socialItem.icon)}
             >
-              {socialItem.icon}
+              
             </a>
           ))}
         </ul>

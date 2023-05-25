@@ -1,3 +1,4 @@
+import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
 import CircleIcon from "../CircleIcon/CircleIcon";
 import {
   ResponsiveContainer,
@@ -8,11 +9,13 @@ import {
   Tooltip,
   Line,
 } from "recharts";
-import { devicesStatisticsChartData } from "../../data/allDatas";
-import SectionTitle from "../SectionTitle/SectionTitle";
 import changeTooltipChart from "../../functions/changeTooltipChart";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 function DevicesStatisticsChart() {
+
+  const devicesStatisticsChartData = useFetchAndFilteredData("devicesStatisticsChartData")
+
   return (
     <section className="mt-5 sm:mt-8">
       <div className="bg-white rounded-lg">

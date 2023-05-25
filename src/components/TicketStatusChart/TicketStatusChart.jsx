@@ -7,12 +7,14 @@ import {
   Tooltip,
   Bar,
 } from "recharts";
-import { ticketStatusChartData } from "../../data/allDatas";
+import useFetchAndFilteredData from "../../hooks/useFetchAndFilteredData";
+import changeTooltipChart from "../../functions/changeTooltipChart";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import CircleIcon from "../CircleIcon/CircleIcon";
-import changeTooltipChart from "../../functions/changeTooltipChart";
 
 function TicketStatusChart() {
+
+  const ticketStatusChartData = useFetchAndFilteredData("ticketStatusChartData")
 
   return (
     <section className="mt-5 mb-5 sm:mt-8 sm:mb-8">
