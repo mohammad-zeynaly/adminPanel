@@ -18,7 +18,6 @@
 - Tailwindcss
 - Reactjs
 - React-router
-- React-toastify
 - recharts
 - Swiper
 - svg icons
