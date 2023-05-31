@@ -65,7 +65,7 @@ function App() {
     >
       <div
         onClick={closeAllModal}
-        className="font-iranYekanMedium bg-[#E7EBEE] overflow-x-hidden"
+        className="font-iranYekanMedium bg-[#E7EBEE] overflow-x-hidden h-full"
       >
         <div className={isShowSidebar ? "overlay" : ""}></div>
         <div className="container">
