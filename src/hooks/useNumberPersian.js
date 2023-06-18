@@ -1,9 +1,9 @@
-function useNumberPersian (numberData) {
 
-    const persianNumber = new Intl.NumberFormat("fa")
-    const convertToPersianNumber = persianNumber.format(numberData)
+function useNumberPersian(numberData) {
+  const persianNumber = new Intl.NumberFormat("fa");
+  const convertToPersianNumber = persianNumber.format(numberData);
 
-    return[convertToPersianNumber]
+  return [convertToPersianNumber];
 }
 
 export default useNumberPersian;

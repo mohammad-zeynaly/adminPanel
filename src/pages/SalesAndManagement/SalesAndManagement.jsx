@@ -8,7 +8,6 @@ import RecentCustomers from "../../components/RecentCustomers/RecentCustomers";
 import Loader from "../../components/Loader/Loader";
 
 function Sale() {
-
   return (
     <div className="w-full">
       <Topbar BreadcrumbTitle="فروش و مدیریت مشتری" BreadcrumbLink="/" />
@@ -23,7 +22,6 @@ function Sale() {
       </>
     </div>
   );
-  
 }
 
 export default Sale;

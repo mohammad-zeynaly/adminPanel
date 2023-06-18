@@ -1,7 +1,7 @@
 import { useState } from "react";
 import useNumberPersian from "../../hooks/useNumberPersian";
 import ProgressBar from "../ProgressBar/ProgressBar";
-import SectionTitle from "../SectionTitle/SectionTitle"
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 function SalesProducts() {
   const [allProductProgress, setAllProductProgress] = useState([

@@ -11,7 +11,8 @@ function NotificationsModal() {
         <li key={notification.id} className="p-3 flex items-center">
           <span
             className={`${notification.bgIcon} flex items-center justify-center p-[0.6rem] rounded-full`}
-            dangerouslySetInnerHTML={convertToSvgHtml(notification.icon)}></span>
+            dangerouslySetInnerHTML={convertToSvgHtml(notification.icon)}
+          ></span>
           <div className="text-2sm pr-4">
             <h5> {notification.description} </h5>
             <h6 className="flex items-center pt-2 text-[#a7abc3]">

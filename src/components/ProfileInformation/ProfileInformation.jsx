@@ -1,8 +1,7 @@
 import useFilteredData from "../../hooks/useFilteredData";
 
 function ProfileInformation() {
-
-  const userProfileInformation = useFilteredData("userProfileInformation")
+  const userProfileInformation = useFilteredData("userProfileInformation");
 
   return (
     <section className="mt-5 sm:mt-8 bg-white p-4 rounded-lg w-full ">

@@ -17,7 +17,9 @@ function TotalCustomersChart() {
             {chartData.title}
           </SectionTitle>
           <div className="p-4 flex flex-col items-center">
-            <div dangerouslySetInnerHTML={convertToSvgHtml(chartData.chart)}></div>
+            <div
+              dangerouslySetInnerHTML={convertToSvgHtml(chartData.chart)}
+            ></div>
             <h6
               className={`${chartData.textClass} font-iranYekanBold text-2xl mt-3`}
             >

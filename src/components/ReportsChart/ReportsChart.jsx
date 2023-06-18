@@ -13,7 +13,6 @@ import changeTooltipChart from "../../functions/changeTooltipChart";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 function Reports() {
-
   const reportChartData = useFilteredData("reportChartData");
 
   return (
@@ -49,7 +48,14 @@ function Reports() {
               <YAxis className="mr-8" />
               <Tooltip
                 formatter={(value, name) => [
-                  changeTooltipChart(value,name,"مجموع فروش","میانگین","","sale"),
+                  changeTooltipChart(
+                    value,
+                    name,
+                    "مجموع فروش",
+                    "میانگین",
+                    "",
+                    "sale"
+                  ),
                 ]}
               />
 

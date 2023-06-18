@@ -2,16 +2,17 @@ import useFilteredData from "../../hooks/useFilteredData";
 import TableTemplate from "../TableTemplate/TableTemplate";
 import { TableHead, TableRow, TableCell, TableBody } from "@mui/material";
 import ProgressBar from "../ProgressBar/ProgressBar";
-import SectionTitle from "../SectionTitle/SectionTitle"
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 function TotalViewsTable() {
-
-  const totalViewsItems = useFilteredData("totalViewsItems")
+  const totalViewsItems = useFilteredData("totalViewsItems");
 
   return (
     <div className="w-full mb-5 xl:mb-0 xl:w-[49%]">
       <div className="bg-white rounded-lg">
-        <SectionTitle sectionClass="p-4 border-b text-2sm">مجموع بازدید</SectionTitle>
+        <SectionTitle sectionClass="p-4 border-b text-2sm">
+          مجموع بازدید
+        </SectionTitle>
         <div>
           <TableTemplate tableScrollSize={450}>
             {/* ------ Table Header ------ */}

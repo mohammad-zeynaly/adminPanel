@@ -3,8 +3,7 @@ import convertToSvgHtml from "../../functions/convertToSvgHtml";
 import { Avatar } from "@mui/material";
 
 function AdminDetailModal() {
-
-  const socialItems = useFilteredData("socialItems")
+  const socialItems = useFilteredData("socialItems");
 
   return (
     <div
@@ -55,9 +54,7 @@ function AdminDetailModal() {
               className="mr-3"
               href={socialItem.linkSocial}
               dangerouslySetInnerHTML={convertToSvgHtml(socialItem.icon)}
-            >
-              
-            </a>
+            ></a>
           ))}
         </ul>
       </div>

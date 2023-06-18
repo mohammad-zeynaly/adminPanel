@@ -13,8 +13,10 @@ import changeTooltipChart from "../../functions/changeTooltipChart";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 function DevicesStatisticsChart() {
-
-  const devicesStatisticsChartData = useFilteredData("devicesStatisticsChartData")
+  
+  const devicesStatisticsChartData = useFilteredData(
+    "devicesStatisticsChartData"
+  );
 
   return (
     <section className="mt-5 sm:mt-8">
@@ -47,7 +49,15 @@ function DevicesStatisticsChart() {
                 <YAxis hide />
                 <Tooltip
                   formatter={(value, name) => [
-                    changeTooltipChart(value,name,"موبایل","دسکتاپ","سایر","mobile","desktop"),
+                    changeTooltipChart(
+                      value,
+                      name,
+                      "موبایل",
+                      "دسکتاپ",
+                      "سایر",
+                      "mobile",
+                      "desktop"
+                    ),
                   ]}
                 />
                 <Line

@@ -2,14 +2,18 @@ import TemplateModal from "../TemplateModal/TemplateModal";
 import useFilteredData from "../../hooks/useFilteredData";
 
 function MessagesModal() {
+  const messageItems = useFilteredData("messageItems");
 
-  const messageItems = useFilteredData("messageItems")
-  
   return (
     <TemplateModal modalTitle="پیام ها" modalCaption="1 پیام خوانده نشده">
       {messageItems.map((message) => (
-        <li key={message.id} className="transition-all duration-150 hover:bg-[rgba(106,110,146,0.3)] flex items-center cursor-pointer p-3">
-          <span className={`${message.avatarBg} text-white flex justify-center items-center w-8 h-8 rounded-full`}>
+        <li
+          key={message.id}
+          className="transition-all duration-150 hover:bg-[rgba(106,110,146,0.3)] flex items-center cursor-pointer p-3"
+        >
+          <span
+            className={`${message.avatarBg} text-white flex justify-center items-center w-8 h-8 rounded-full`}
+          >
             {message.avatar}
           </span>
           <div className="pr-4">

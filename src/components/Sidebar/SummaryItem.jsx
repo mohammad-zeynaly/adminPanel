@@ -1,7 +1,6 @@
 import convertToSvgHtml from "../../functions/convertToSvgHtml";
 
 function SummaryItem({ icon, bgClass, title, caption }) {
-
   return (
     <li className="mt-2 flex items-center hover:bg-[#f5f5f5] p-2 rounded-lg cursor-pointer">
       <div
@@ -16,7 +15,6 @@ function SummaryItem({ icon, bgClass, title, caption }) {
       </div>
     </li>
   );
-  
 }
 
 export default SummaryItem;

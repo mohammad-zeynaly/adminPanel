@@ -1,8 +1,7 @@
-import useFilteredData from "../../hooks/useFilteredData"
+import useFilteredData from "../../hooks/useFilteredData";
 
 function SupportTime() {
-
-  const supportTimeBoxes = useFilteredData("supportTimeBoxes")
+  const supportTimeBoxes = useFilteredData("supportTimeBoxes");
 
   return (
     <section className="mt-5 sm:mt-8">
@@ -27,9 +26,7 @@ function SupportTime() {
                 </span>
               </div>
               <div className="flex flex-col text-2sm lg:text-sm mr-3 mt-4 lg:my-0">
-                <h6 className="font-iranYekanBold">
-                  {supportTimeItem.title}
-                </h6>
+                <h6 className="font-iranYekanBold">{supportTimeItem.title}</h6>
                 <span className="pt-3 text-[#a7abc3]">
                   {supportTimeItem.caption}
                 </span>

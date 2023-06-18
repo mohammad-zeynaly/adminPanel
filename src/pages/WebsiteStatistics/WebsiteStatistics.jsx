@@ -5,7 +5,6 @@ import VisitingUsers from "../../components/VisitingUsers/VisitingUsers";
 import Loader from "../../components/Loader/Loader";
 
 function WebsiteStatistics() {
-  
   return (
     <div>
       <Topbar
@@ -20,7 +19,6 @@ function WebsiteStatistics() {
       </>
     </div>
   );
-
 }
 
 export default WebsiteStatistics;

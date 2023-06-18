@@ -1,6 +1,6 @@
 import SalesAndManagement from "../pages/SalesAndManagement/SalesAndManagement";
 import Support from "../pages/Support/Support";
-import WebsiteStatistics  from "../pages/WebsiteStatistics/WebsiteStatistics";
+import WebsiteStatistics from "../pages/WebsiteStatistics/WebsiteStatistics";
 import Profile from "../pages/Profile/Profile";
 
 const routes = [

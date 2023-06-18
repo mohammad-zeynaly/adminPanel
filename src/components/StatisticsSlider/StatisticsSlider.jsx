@@ -1,13 +1,12 @@
 import SwiperCore, { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import useFilteredData from "../../hooks/useFilteredData"
+import useFilteredData from "../../hooks/useFilteredData";
 import StatisticsSliderBox from "./StatisticsSliderBox";
 SwiperCore.use([Autoplay]);
 import "swiper/css";
 
 function StatisticsSlider() {
-
-  const StatisticsSliderItems = useFilteredData("StatisticsSliderItems")
+  const StatisticsSliderItems = useFilteredData("StatisticsSliderItems");
 
   return (
     <div className="bg-white rounded-lg p-4 mt-6">

@@ -9,7 +9,6 @@ function changeTooltipChart(
 ) {
 
   if (secondChartDataName) {
-
     if (tooltipName === firstChartDataName) {
       return `${firstTooltipLabel}: ${tooltipValue}`;
     } else if (tooltipName === secondChartDataName) {
@@ -17,17 +16,14 @@ function changeTooltipChart(
     } else {
       return `${thirdTooltipLabel}: ${tooltipValue}`;
     }
-
   } else {
-    
     if (tooltipName === firstChartDataName) {
       return `${firstTooltipLabel}: ${tooltipValue}`;
     } else {
       return `${secondTooltipLabel}: ${tooltipValue}`;
     }
-    
   }
-
+  
 }
 
 export default changeTooltipChart;

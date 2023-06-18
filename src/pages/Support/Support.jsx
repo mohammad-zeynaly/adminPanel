@@ -5,7 +5,6 @@ import TicketStatusChart from "../../components/TicketStatusChart/TicketStatusCh
 import Loader from "../../components/Loader/Loader";
 
 function Support() {
-
   return (
     <div className>
       <Topbar BreadcrumbTitle="داشبورد پشتیبانی" BreadcrumbLink="/support" />
@@ -17,7 +16,6 @@ function Support() {
       </>
     </div>
   );
-  
 }
 
 export default Support;

@@ -1,18 +1,20 @@
 import useFilteredData from "../../hooks/useFilteredData";
-import SectionTitle from "../SectionTitle/SectionTitle"
+import SectionTitle from "../SectionTitle/SectionTitle";
 import TableTemplate from "../TableTemplate/TableTemplate";
 import { TableHead, TableRow, TableCell, TableBody } from "@mui/material";
 
 function RecentCustomers() {
-
-  const recentCustomersData = useFilteredData("recentCustomersData")
+  const recentCustomersData = useFilteredData("recentCustomersData");
 
   return (
     <section className="mt-5 sm:mt-8 mb-5 sm:mb-8">
       <div className="flex flex-col xl:flex-row justify-between items-center">
         <div className="w-full">
           <div className="bg-white rounded-lg w-full">
-            <SectionTitle sectionClass="p-4 border-b"> مشتریان اخیر </SectionTitle>
+            <SectionTitle sectionClass="p-4 border-b">
+              {" "}
+              مشتریان اخیر{" "}
+            </SectionTitle>
             <div className="p-4">
               <TableTemplate tableScrollSize={575}>
                 {/* ------ Table Header ------ */}

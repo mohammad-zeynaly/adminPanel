@@ -5,7 +5,6 @@ import ProfileSkills from "../../components/ProfileSkills/ProfileSkills";
 import Loader from "../../components/Loader/Loader";
 
 function Profile() {
-
   return (
     <div>
       <Topbar BreadcrumbTitle="پروفایل" BreadcrumbLink="/profile" />
@@ -17,7 +16,6 @@ function Profile() {
       </>
     </div>
   );
-  
 }
 
 export default Profile;

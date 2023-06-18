@@ -13,8 +13,7 @@ import changeTooltipChart from "../../functions/changeTooltipChart";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 function RegionalSalesChart() {
-
-  const regionalSalesChartData = useFilteredData("regionalSalesChartData")
+  const regionalSalesChartData = useFilteredData("regionalSalesChartData");
 
   return (
     <div className="w-full xl:w-[49%]">
@@ -35,7 +34,14 @@ function RegionalSalesChart() {
               <YAxis type="category" dataKey="name" />
               <Tooltip
                 formatter={(value, name) => [
-                  changeTooltipChart(value,name,"جمعیت","","","population"),
+                  changeTooltipChart(
+                    value,
+                    name,
+                    "جمعیت",
+                    "",
+                    "",
+                    "population"
+                  ),
                 ]}
               />
 

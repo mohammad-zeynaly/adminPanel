@@ -18,8 +18,7 @@ function StatisticsSliderBox(props) {
           <div
             className={`${bgColor} w-8 h-8 flex items-center justify-center rounded-full`}
             dangerouslySetInnerHTML={convertToSvgHtml(icon)}
-          >
-          </div>
+          ></div>
           <span className="pr-3 text-sm "> {title} </span>
         </div>
         <h6 className={`text-2xl font-iranYekanBold ${textColor}`}>{count}</h6>

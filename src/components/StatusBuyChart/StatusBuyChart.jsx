@@ -14,8 +14,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import changeTooltipChart from "../../functions/changeTooltipChart";
 
 function StatusBuyChart() {
-
-  const statusBuyChartData = useFilteredData("statusBuyChartData")
+  const statusBuyChartData = useFilteredData("statusBuyChartData");
 
   return (
     <div className="w-full xl:w-[49%] xl:mb-0 flex items-center flex-col xl:flex-row">
@@ -35,20 +34,31 @@ function StatusBuyChart() {
             </div>
           </div>
 
-          <div id="chart" className="my-4 flex justify-center w-full status-chart">
+          <div
+            id="chart"
+            className="my-4 flex justify-center w-full status-chart"
+          >
             <ResponsiveContainer width="100%" height={250}>
               <LineChart
                 data={statusBuyChartData}
                 width="100%"
                 height={250}
                 style={{ direction: "ltr" }}
-                className="translate-x-[-7%] sm:translate-x-[-4%] translate-y-[0%] chart__status-buy">
+                className="translate-x-[-7%] sm:translate-x-[-4%] translate-y-[0%] chart__status-buy"
+              >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" hide />
                 <YAxis />
                 <Tooltip
                   formatter={(value, name) => [
-                    changeTooltipChart(value,name,"موفقیت","بازگشت","","success"),
+                    changeTooltipChart(
+                      value,
+                      name,
+                      "موفقیت",
+                      "بازگشت",
+                      "",
+                      "success"
+                    ),
                   ]}
                 />
 
@@ -91,7 +101,6 @@ function StatusBuyChart() {
       </div>
     </div>
   );
-  
 }
 
 export default StatusBuyChart;
