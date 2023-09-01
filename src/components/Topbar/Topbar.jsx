@@ -9,15 +9,16 @@ import MenuModals from "./MenuModals";
 import AdminDetailModal from "../AdminDetailModal/AdminDetailModal";
 
 function Topbar({ BreadcrumbTitle, BreadcrumbLink }) {
-  const {
+  const { isShowModals, setIsShowModals } = useContext(AdminPanelContext);
+
+  let {
     isShowQuickAccessModal,
     isShowMessageModal,
     isShowNotificationsModal,
-    isShowMenuModals,
     isShowAdminDetailModal,
-    setIsShowSidebar,
-    setIsShowMenuModals,
-  } = useContext(AdminPanelContext);
+    isShowMenuModals,
+    isShowSidebar,
+  } = isShowModals;
 
   return (
     <header className="header py-4">
@@ -57,7 +58,7 @@ function Topbar({ BreadcrumbTitle, BreadcrumbLink }) {
               onClick={(event) => {
                 event.stopPropagation();
 
-                setIsShowSidebar((prevShow) => !prevShow);
+                setIsShowModals({ isShowSidebar: !isShowSidebar });
               }}
               className="ml-4 bg-white rounded-lg px-3 py-2"
             >
@@ -80,7 +81,7 @@ function Topbar({ BreadcrumbTitle, BreadcrumbLink }) {
               id="menuBtn"
               onClick={(event) => {
                 event.stopPropagation();
-                setIsShowMenuModals((prevShow) => !prevShow);
+                setIsShowModals({ isShowMenuModals: !isShowMenuModals });
               }}
               className="bg-white rounded-lg px-3 py-2"
             >

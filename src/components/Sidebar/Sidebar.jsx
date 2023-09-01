@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import SummaryItem from "./SummaryItem";
 
 function Sidebar() {
-  const { isShowSidebar } = useContext(AdminPanelContext);
+  const { isShowModals } = useContext(AdminPanelContext);
 
   const SummaryItems = useFilteredData("summaryItems");
 
@@ -14,7 +14,7 @@ function Sidebar() {
       <div
         onClick={(event) => event.stopPropagation()}
         className={`${
-          isShowSidebar ? "right-0" : "-right-80"
+          isShowModals.isShowSidebar ? "right-0" : "-right-80"
         } h-[110%] overflow-y-auto z-50 bg-white w-64 sm:w-80 fixed top-0 bottom-0 lg:right-0 p-4 transition-all duration-150`}
       >
         <div className="flex justify-center">

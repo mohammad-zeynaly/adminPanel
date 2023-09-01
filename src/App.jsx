@@ -10,12 +10,14 @@ function App() {
   const routers = useRoutes(routes);
 
   // states
-  const [isShowQuickAccessModal, setIsShowQuickAccessModal] = useState(false);
-  const [isShowMessageModal, setIsShowMessageModal] = useState(false);
-  const [isShowNotificationsModal, setIsShowNotificationsModal] = useState(false);
-  const [isShowSidebar, setIsShowSidebar] = useState(false);
-  const [isShowMenuModals, setIsShowMenuModals] = useState(false);
-  const [isShowAdminDetailModal, setIsShowAdminDetailModal] = useState(false);
+  const [isShowModals, setIsShowModals] = useState({
+    isShowQuickAccessModal: false,
+    isShowMessageModal: false,
+    isShowNotificationsModal: false,
+    isShowSidebar: false,
+    isShowMenuModals: false,
+    isShowAdminDetailModal: false,
+  });
   const [loadingTime, setLoadingTime] = useState(true);
   const [allData, setAllData] = useState([]);
 
@@ -35,39 +37,29 @@ function App() {
   }, []);
 
   const closeAllModal = () => {
-    setIsShowQuickAccessModal(false);
-    setIsShowMessageModal(false);
-    setIsShowNotificationsModal(false);
-    setIsShowSidebar(false);
-    setIsShowMenuModals(false);
-    setIsShowAdminDetailModal(false);
+    setIsShowModals({ isShowQuickAccessModal: false });
+    setIsShowModals({ isShowMessageModal: false });
+    setIsShowModals({ isShowNotificationsModal: false });
+    setIsShowModals({ isShowSidebar: false });
+    setIsShowModals({ isShowMenuModals: false });
+    setIsShowModals({ isShowAdminDetailModal: false });
   };
 
   return (
     <AdminPanelContext.Provider
       value={{
-        isShowQuickAccessModal,
-        isShowMessageModal,
-        isShowNotificationsModal,
-        isShowSidebar,
-        isShowMenuModals,
-        isShowAdminDetailModal,
+        isShowModals,
         loadingTime,
         allData,
         setAllData,
-        setIsShowQuickAccessModal,
-        setIsShowMessageModal,
-        setIsShowNotificationsModal,
-        setIsShowSidebar,
-        setIsShowMenuModals,
-        setIsShowAdminDetailModal,
+        setIsShowModals,
       }}
     >
       <div
         onClick={closeAllModal}
         className="font-iranYekanMedium bg-[#E7EBEE] overflow-x-hidden h-full"
       >
-        <div className={isShowSidebar ? "overlay" : ""}></div>
+        <div className={isShowModals.isShowSidebar ? "overlay" : ""}></div>
         <div className="container">
           <div className="flex items-center">
             <Sidebar />
