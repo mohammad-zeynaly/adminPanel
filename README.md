@@ -1,6 +1,6 @@
 # adminPanel/fa page front-end
 
-## [review online](https://mohammad-zeynali.github.io/adminPanel/)
+## [review online](https://mohammad-zeynaly.github.io/adminPanel/)
 
 ---
 
